@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:khel_udaan/appbar.dart';
+import 'package:khel_udaan/home.dart';
 import 'package:khel_udaan/main.dart';
 
 class Invest extends StatelessWidget {
@@ -7,36 +9,7 @@ class Invest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Khel Udaan'),
-        leading: Icon(Icons.sports_baseball),
-        backgroundColor: Colors.redAccent,
-        actions: [
-          TextButton(
-            style: TextButton.styleFrom(
-              primary: Colors.white70,
-            ),
-            onPressed: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) => const MyApp(),
-                ),
-              );
-            }, 
-            child: Text('Home'),
-          ),
-          TextButton(
-            style: TextButton.styleFrom(
-              primary: Colors.white70,
-            ),
-            onPressed: () {
-              
-            }, 
-            child: Text('Invest'),
-          ),
-        ],
-      ),
+      appBar: CustomAppBar(),
       body: SingleChildScrollView(
         child: Container(
           child: Padding(
