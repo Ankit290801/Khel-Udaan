@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:khel_udaan/atheletes.dart';
+import 'package:khel_udaan/contact.dart';
 import 'package:khel_udaan/home.dart';
+import 'package:khel_udaan/how-it-works.dart';
 import 'package:khel_udaan/invest.dart';
+import 'package:khel_udaan/support.dart';
 import 'package:khel_udaan/why-us.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
@@ -17,17 +21,23 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
         padding: const EdgeInsets.symmetric(horizontal: 100.0, vertical: 20),
         child: Row(
           children: [
-            Text(
-              'KHEL - UDAAN',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
+            TextButton(
+              child: Text(
+                'KHEL - UDAAN',
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
               ),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, '/');
+              }
             ),
             Spacer(),
             TextButton(
               child: Text(
-                'Home',
+                'Athletes',
                 style: TextStyle(
                   fontSize: 12.0,
                   fontWeight: FontWeight.bold,
@@ -37,13 +47,16 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
               ),
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => const Home(),
-                  ),
-                );
-              },
+                Navigator.pushReplacementNamed(context, '/athletes');
+              }
+              // onPressed: () {
+              //   Navigator.pushReplacement(
+              //     context,
+              //     MaterialPageRoute(
+              //       builder: (BuildContext context) => const Athletes(),
+              //     ),
+              //   );
+              // },
             ),
             TextButton(
               child: Text(
@@ -57,13 +70,23 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
               ),
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => const Invest(),
-                  ),
-                );
-              },
+                Navigator.pushReplacementNamed(context, '/invest');
+              }
+            ),
+            TextButton(
+              child: Text(
+                'How it works',
+                style: TextStyle(
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+              ),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, '/how-it-works');
+              }
             ),
             TextButton(
               child: Text(
@@ -77,13 +100,38 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
               ),
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => const WhyUs(),
-                  ),
-                );
-              },
+                Navigator.pushReplacementNamed(context, '/why-us');
+              }
+            ),
+            TextButton(
+              child: Text(
+                'Supported by',
+                style: TextStyle(
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+              ),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, '/supported-by');
+              }
+            ),
+            TextButton(
+              child: Text(
+                'Contact',
+                style: TextStyle(
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+              ),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, '/contact');
+              }
             ),
           ],
         ),
