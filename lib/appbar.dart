@@ -1,11 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:khel_udaan/atheletes.dart';
-import 'package:khel_udaan/contact.dart';
-import 'package:khel_udaan/home.dart';
-import 'package:khel_udaan/how-it-works.dart';
-import 'package:khel_udaan/invest.dart';
-import 'package:khel_udaan/support.dart';
-import 'package:khel_udaan/why-us.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
   const CustomAppBar({ Key? key }) : super(key: key);

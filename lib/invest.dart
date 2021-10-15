@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:khel_udaan/appbar.dart';
-import 'package:khel_udaan/home.dart';
-import 'package:khel_udaan/main.dart';
 
 class Invest extends StatelessWidget {
   const Invest({ Key? key }) : super(key: key);

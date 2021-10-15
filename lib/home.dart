@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:khel_udaan/appbar.dart';
 import 'package:khel_udaan/footer.dart';
-import 'package:khel_udaan/invest.dart';
 
 class Home extends StatelessWidget {
   const Home({ Key? key }) : super(key: key);
@@ -206,16 +205,23 @@ class Home extends StatelessWidget {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(
-                      child: Card(
-                        color: Colors.brown,
-                        child: Image.asset(
-                          'assets/golf.png',
-                          height: 700,
-                          width: 700,
-                        ),
+                    Container(
+                      height: 800,
+                      width: 600,
+                      child: Expanded(
+                        child: Image.asset('assets/golf.png'),
                       ),
                     ),
+                    // Expanded(
+                    //   child: Card(
+                    //     color: Colors.brown,
+                    //     child: Image.asset(
+                    //       'assets/golf.png',
+                    //       height: 700,
+                    //       width: 700,
+                    //     ),
+                    //   ),
+                    // ),
                     Expanded(
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
@@ -295,7 +301,7 @@ class Home extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 100.0, vertical: 200.0),
+                padding: EdgeInsets.symmetric(horizontal: 100.0, vertical: 100.0),
                 child: Column(
                   children: [
                     Align(
@@ -351,6 +357,51 @@ class Home extends StatelessWidget {
                               ),
                             ),
                             SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 40.0,),
                             TextButton(
                               onPressed: () {},
                               child: Text('Know More'),
@@ -382,6 +433,51 @@ class Home extends StatelessWidget {
                               ),
                             ),
                             SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 40.0,),
                             TextButton(
                               onPressed: () {},
                               child: Text('Know More'),
@@ -413,6 +509,51 @@ class Home extends StatelessWidget {
                               ),
                             ),
                             SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 20.0,),
+                            Card(
+                              elevation: 0.0,
+                              color: Colors.transparent,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.check,
+                                    size: 20.0,
+                                  ),
+                                  SizedBox(width: 10.0,),
+                                  Text('500+ Sports'),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 40.0,),
                             TextButton(
                               onPressed: () {},
                               child: Text('Know More'),
