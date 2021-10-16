@@ -78,21 +78,77 @@ class Home extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 40.0,),
-              Center(
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 350.0),
                 child: Stack(
+                  clipBehavior: Clip.none,
                   children: [
-                    Positioned(
-                      left: 0,
-                      top: 0,
-                      child: Expanded(
-                        child: Container(
-                          child: Image.asset('assets/dashboard.png'),
+                    Container(
+                      height: 300,
+                      width: 575,
+                        child: Expanded(
+                          child: Container(
+                            child: Image.asset('assets/dashboard.png'),
+                          ),
                         ),
-                      ),
+                    ),
+                    Positioned(
+                      top: 100,
+                      right: -40,
+                      child: Container(
+                        height: 100,
+                        width: 200,
+                        child: Expanded(
+                          child: Container(
+                            child: Image.asset('assets/dashboard-graph.png'),
+                          ),
+                        ),
+                      )
+                    ),
+                    Positioned(
+                      bottom: -60,
+                      left: -60,
+                      child: Container(
+                        height: 150,
+                        width: 150,
+                        child: Expanded(
+                          child: Container(
+                            child: Image.asset('assets/dashboard-health.png'),
+                          ),
+                        ),
+                      )
                     ),
                   ],
                 ),
               ),
+              // Center(
+              //   child: Stack(
+              //     clipBehavior: Clip.none,
+              //     children: [
+              //       Expanded(
+              //         child: Container(
+              //           child: Image.asset('assets/dashboard.png'),
+              //         ),
+              //       ),
+              //       Positioned(
+              //         top: 50,
+              //         right: -50,
+              //         child: Expanded(
+              //           child: Container(
+              //             child: Image.asset('assets/dashboard-graph.png'),
+              //           ),
+              //         ),
+              //       ),
+              //       Positioned(
+              //         child: Expanded(
+              //           child: Container(
+              //             child: Image.asset('assets/dashboard-graph.png'),
+              //           ),
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
               SizedBox(height: 100.0,),
               Container(
                 color: Color.fromRGBO(235, 235, 255, 1.0),

@@ -167,138 +167,169 @@ class WhyUs extends StatelessWidget {
                 ),
               ),
               Container(
-                color: Color.fromRGBO(245, 245, 255, 1.0),
-                padding: EdgeInsets.fromLTRB(30.0, 300.0, 30.0, 100.0),
-                child: Row(
+                margin: EdgeInsets.only(top: 100),
+                child: Stack(
+                  clipBehavior: Clip.none,
                   children: [
                     Container(
-                      width: 600.0,
-                      height: 700,
-                      child: Expanded(
-                        child: Image.asset(
-                        'assets/dashboard.png',
-                        ),
-                      )
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      color: Color.fromRGBO(245, 245, 255, 1.0),
+                      padding: EdgeInsets.fromLTRB(30.0, 300.0, 30.0, 100.0),
+                      child: Row(
                         children: [
-                          Text(
-                            'EASE-OF-USE',
-                            style: TextStyle(
-                              fontSize: 16.0,
-                            ),
-                          ),
-                          SizedBox(height: 20.0,),
-                          Text(
-                            'Built to empower your whole team\n'
-                            'and ofcourse you!',
-                            style: TextStyle(
-                              fontSize: 40.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          SizedBox(height: 40.0,),
-                          Text(
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc placerat posuere\n'
-                            'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit lacinia purus sit\n' 
-                            'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula lacinia\n', 
-                            textAlign: TextAlign.justify,
-                          ),
-                          SizedBox(height: 60.0,),
                           Container(
-                            child: Card(
-                              color: Color.fromRGBO(245, 245, 255, 1.0),
-                              elevation: 0.0,
-                              child: Expanded(
-                                child: Row(
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      children: [
-                                        Icon(
-                                          Icons.stacked_bar_chart_outlined,
-                                          size: 40.0,
-                                          color: Colors.black,
-                                        )
-                                      ],
-                                    ),
-                                    SizedBox(width: 20.0,),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Sleek Visualisation',
-                                          style: TextStyle(
-                                            fontSize: 16.0,
-                                          ),
-                                        ),
-                                        SizedBox(height: 20.0,),
-                                        Text(
-                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
-                                          'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
-                                          'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
-                                          style: TextStyle(
-                                            fontSize: 14.0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                            height: 600,
+                            width: 600,
+                            child: Stack(
+                              clipBehavior: Clip.none,
+                              children: [
+                                Container(
+                                  height: 300,
+                                  width: 500,
+                                  child: Expanded(child: Image.asset('assets/dashboard.png'),)
                                 ),
-                              ),
+                                Positioned(
+                                  top: 200,
+                                  left: 50,
+                                  child: Container(
+                                    height: 300,
+                                    width: 500,
+                                    child: Expanded(child: Image.asset('assets/dashboard.png'),)
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                          SizedBox(height: 60.0,),
-                          Container(
-                            child: Card(
-                              color: Color.fromRGBO(245, 245, 255, 1.0),
-                              elevation: 0.0,
-                              child: Expanded(
-                                child: Row(
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      children: [
-                                        Icon(
-                                          Icons.computer_outlined,
-                                          size: 40.0,
-                                          color: Colors.black,
-                                        )
-                                      ],
-                                    ),
-                                    SizedBox(width: 20.0,),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Custom Dashboard',
-                                          style: TextStyle(
-                                            fontSize: 16.0,
-                                          ),
-                                        ),
-                                        SizedBox(height: 20.0,),
-                                        Text(
-                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
-                                          'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
-                                          'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
-                                          style: TextStyle(
-                                            fontSize: 14.0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'EASE-OF-USE',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                  ),
                                 ),
-                              ),
+                                SizedBox(height: 20.0,),
+                                Text(
+                                  'Built to empower your whole team\n'
+                                  'and ofcourse you!',
+                                  style: TextStyle(
+                                    fontSize: 40.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(height: 40.0,),
+                                Text(
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc placerat posuere\n'
+                                  'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit lacinia purus sit\n' 
+                                  'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula lacinia\n', 
+                                  textAlign: TextAlign.justify,
+                                ),
+                                SizedBox(height: 60.0,),
+                                Container(
+                                  child: Card(
+                                    color: Color.fromRGBO(245, 245, 255, 1.0),
+                                    elevation: 0.0,
+                                    child: Expanded(
+                                      child: Row(
+                                        children: [
+                                          Column(
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            children: [
+                                              Icon(
+                                                Icons.stacked_bar_chart_outlined,
+                                                size: 40.0,
+                                                color: Colors.black,
+                                              )
+                                            ],
+                                          ),
+                                          SizedBox(width: 20.0,),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Sleek Visualisation',
+                                                style: TextStyle(
+                                                  fontSize: 16.0,
+                                                ),
+                                              ),
+                                              SizedBox(height: 20.0,),
+                                              Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
+                                                'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
+                                                'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
+                                                style: TextStyle(
+                                                  fontSize: 14.0,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 60.0,),
+                                Container(
+                                  child: Card(
+                                    color: Color.fromRGBO(245, 245, 255, 1.0),
+                                    elevation: 0.0,
+                                    child: Expanded(
+                                      child: Row(
+                                        children: [
+                                          Column(
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            children: [
+                                              Icon(
+                                                Icons.computer_outlined,
+                                                size: 40.0,
+                                                color: Colors.black,
+                                              )
+                                            ],
+                                          ),
+                                          SizedBox(width: 20.0,),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Custom Dashboard',
+                                                style: TextStyle(
+                                                  fontSize: 16.0,
+                                                ),
+                                              ),
+                                              SizedBox(height: 20.0,),
+                                              Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
+                                                'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
+                                                'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
+                                                style: TextStyle(
+                                                  fontSize: 14.0,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                        ],
+                        ]
                       ),
                     ),
-                  ]
+                    Positioned(
+                      top: -100,
+                      child:  Container(
+                        margin: EdgeInsets.symmetric(horizontal: 200),
+                        height: 250,
+                        width: 900,
+                        color: Color.fromRGBO(30, 178, 152, 1.0),
+                    ),
+                    ),
+                  ],
                 ),
               ),
               Container(
@@ -479,292 +510,306 @@ class WhyUs extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 50.0),
-                color: Color.fromRGBO(11, 33, 34, 1.0),
-                child: Column(
+                margin: EdgeInsets.only(bottom: 300.0),
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  clipBehavior: Clip.none,
                   children: [
-                    Text(
-                      'You are in good hands',
-                      style: TextStyle(
-                        fontSize: 14.0,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(height: 80.0,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Column(
-                          children: [
-                            Text(
-                              '200 Million',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 30.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(height: 10.0,),
-                            Text(
-                              'Users Reached',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.0,
-                              ),
-                            ),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Text(
-                              '1.3 billion',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 30.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(height: 10.0,),
-                            Text(
-                              'Experiences Delivered',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.0,
-                              ),
-                            ),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Text(
-                              '2.2 billion',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 30.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(height: 10.0,),
-                            Text(
-                              'Events Processed',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12.0,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 80.0,),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 40.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    Container(
+                      padding: EdgeInsets.fromLTRB(30.0, 50.0, 30.0, 150.0),
+                      color: Color.fromRGBO(11, 33, 34, 1.0),
+                      child: Column(
                         children: [
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30.0),
+                          Text(
+                            'You are in good hands',
+                            style: TextStyle(
+                              fontSize: 14.0,
+                              color: Colors.white,
                             ),
-                            color: Color.fromRGBO(50, 73, 74, 1.0),
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(20.0, 30.0, 20.0, 80.0),
-                              child: Row(
+                          ),
+                          SizedBox(height: 80.0,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Column(
                                 children: [
-                                  CircleAvatar(
-                                    backgroundColor: Color.fromRGBO(196, 196, 196, 1.0),
-                                    radius: 60,
+                                  Text(
+                                    '200 Million',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 30.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                        'Trust Partner 1',
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 14.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                        SizedBox(height: 20.0,),
-                                        Text(
-                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-                                          'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
-                                          'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
-                                          'massa',
-                                          style: TextStyle(
-                                            fontSize: 12.0,
-                                            color: Color.fromRGBO(121, 130, 130, 1.0),
-                                            letterSpacing: 1.2,
-                                          ),
-                                        ),
-                                      ]
+                                  SizedBox(height: 10.0,),
+                                  Text(
+                                    'Users Reached',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12.0,
                                     ),
                                   ),
                                 ],
                               ),
-                            ),
-                          ),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(30.0),
-                            ),
-                            color: Color.fromRGBO(50, 73, 74, 1.0),
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(20.0, 30.0, 20.0, 80.0),
-                              child: Row(
+                              Column(
                                 children: [
-                                  CircleAvatar(
-                                    backgroundColor: Color.fromRGBO(196, 196, 196, 1.0),
-                                    radius: 60,
+                                  Text(
+                                    '1.3 billion',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 30.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                        'Trust Partner 2',
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 14.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                        SizedBox(height: 20.0,),
-                                        Text(
-                                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-                                          'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
-                                          'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
-                                          'massa',
-                                          style: TextStyle(
-                                            fontSize: 12.0,
-                                            color: Color.fromRGBO(121, 130, 130, 1.0),
-                                            letterSpacing: 1.2,
-                                          ),
-                                        ),
-                                      ]
+                                  SizedBox(height: 10.0,),
+                                  Text(
+                                    'Experiences Delivered',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12.0,
                                     ),
                                   ),
                                 ],
                               ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '2.2 billion',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 30.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(height: 10.0,),
+                                  Text(
+                                    'Events Processed',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12.0,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 80.0,),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Card(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30.0),
+                                  ),
+                                  color: Color.fromRGBO(50, 73, 74, 1.0),
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(20.0, 30.0, 20.0, 80.0),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(
+                                          backgroundColor: Color.fromRGBO(196, 196, 196, 1.0),
+                                          radius: 60,
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                              'Trust Partner 1',
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 14.0,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              SizedBox(height: 20.0,),
+                                              Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
+                                                'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
+                                                'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
+                                                'massa',
+                                                style: TextStyle(
+                                                  fontSize: 12.0,
+                                                  color: Color.fromRGBO(121, 130, 130, 1.0),
+                                                  letterSpacing: 1.2,
+                                                ),
+                                              ),
+                                            ]
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Card(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30.0),
+                                  ),
+                                  color: Color.fromRGBO(50, 73, 74, 1.0),
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(20.0, 30.0, 20.0, 80.0),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(
+                                          backgroundColor: Color.fromRGBO(196, 196, 196, 1.0),
+                                          radius: 60,
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                              'Trust Partner 2',
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 14.0,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              SizedBox(height: 20.0,),
+                                              Text(
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
+                                                'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
+                                                'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
+                                                'massa',
+                                                style: TextStyle(
+                                                  fontSize: 12.0,
+                                                  color: Color.fromRGBO(121, 130, 130, 1.0),
+                                                  letterSpacing: 1.2,
+                                                ),
+                                              ),
+                                            ]
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                        ],
+                        ] 
                       ),
                     ),
-                  ] 
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 150.0,),
-                child: Card(
-                  color: Color.fromRGBO(118, 97, 255, 1.0),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.fromLTRB(0.0, 50.0, 0.0, 30.0),
-                    child: Column(
-                      children: [
-                        Text(
-                          "Don't take our word for it. Try Khel-Udaan for free.",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 35.0,
-                            letterSpacing: 1.5,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(height: 30.0,),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 150.0),
-                          child: TextFormField(
-                            style: TextStyle(color: Colors.white),
-                            decoration: InputDecoration(
-                              hintText: 'Your Email',
-                              hintStyle: TextStyle(color: Colors.white),
-                              contentPadding: EdgeInsets.symmetric(horizontal: 30.0),
-                              enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white, width: 2.0),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.white, width: 2.0),
-                              ),
-                              suffixIcon: TextButton(
-                                style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                                  foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(150, 136, 255, 1.0)),
-                                  fixedSize: MaterialStateProperty.all<Size>(Size.fromWidth(200.0)),
-                                ),
-                                onPressed: () {},
-                                child: Text("Let's Play"),
-                              ),
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: 40.0,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    Positioned(
+                      bottom: -200,
+                      child: Container(
+                        height: 300.0,
+                        width: 1000.0,
+                                    margin: EdgeInsets.symmetric(horizontal: 150.0,),
+                                    child: Card(
+                      color: Color.fromRGBO(118, 97, 255, 1.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(0.0, 50.0, 0.0, 30.0),
+                        child: Column(
                           children: [
-                            Card(
-                              color: Colors.transparent,
-                              elevation: 0.0,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Icon(
-                                    Icons.check_circle,
-                                    color: Colors.white,
-                                  ),
-                                  Text(
-                                    'TRY BEFORE YOU BUY',
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ],
+                            Text(
+                              "Don't take our word for it. Try Khel-Udaan for free.",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 35.0,
+                                letterSpacing: 1.5,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Card(
-                              color: Colors.transparent,
-                              elevation: 0.0,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Icon(
-                                    Icons.check_circle,
-                                    color: Colors.white,
+                            SizedBox(height: 30.0,),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 150.0),
+                              child: TextFormField(
+                                style: TextStyle(color: Colors.white),
+                                decoration: InputDecoration(
+                                  hintText: 'Your Email',
+                                  hintStyle: TextStyle(color: Colors.white),
+                                  contentPadding: EdgeInsets.symmetric(horizontal: 30.0),
+                                  enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.white, width: 2.0),
                                   ),
-                                  Text(
-                                    'NO CREDIT CARD REQUIRED',
-                                    style: TextStyle(color: Colors.white),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.white, width: 2.0),
                                   ),
-                                ],
+                                  suffixIcon: TextButton(
+                                    style: ButtonStyle(
+                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                                      foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(150, 136, 255, 1.0)),
+                                      fixedSize: MaterialStateProperty.all<Size>(Size.fromWidth(200.0)),
+                                    ),
+                                    onPressed: () {},
+                                    child: Text("Let's Play"),
+                                  ),
+                                ),
                               ),
                             ),
-                            Card(
-                              color: Colors.transparent,
-                              elevation: 0.0,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Icon(
-                                    Icons.check_circle,
-                                    color: Colors.white,
+                            SizedBox(height: 60.0,),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Card(
+                                  color: Colors.transparent,
+                                  elevation: 0.0,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(
+                                        Icons.check_circle,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        'TRY BEFORE YOU BUY',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ],
                                   ),
-                                  Text(
-                                    'SUPPORT INCLUDED',
-                                    style: TextStyle(color: Colors.white),
+                                ),
+                                Card(
+                                  color: Colors.transparent,
+                                  elevation: 0.0,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(
+                                        Icons.check_circle,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        'NO CREDIT CARD REQUIRED',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
+                                ),
+                                Card(
+                                  color: Colors.transparent,
+                                  elevation: 0.0,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(
+                                        Icons.check_circle,
+                                        color: Colors.white,
+                                      ),
+                                      Text(
+                                        'SUPPORT INCLUDED',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),
-                      ],
+                      ),
+                                    ),
+                                  ),
                     ),
-                  ),
+                  ],
                 ),
               ),
               Footer(),
