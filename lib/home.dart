@@ -121,34 +121,6 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
-              // Center(
-              //   child: Stack(
-              //     clipBehavior: Clip.none,
-              //     children: [
-              //       Expanded(
-              //         child: Container(
-              //           child: Image.asset('assets/dashboard.png'),
-              //         ),
-              //       ),
-              //       Positioned(
-              //         top: 50,
-              //         right: -50,
-              //         child: Expanded(
-              //           child: Container(
-              //             child: Image.asset('assets/dashboard-graph.png'),
-              //           ),
-              //         ),
-              //       ),
-              //       Positioned(
-              //         child: Expanded(
-              //           child: Container(
-              //             child: Image.asset('assets/dashboard-graph.png'),
-              //           ),
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
               SizedBox(height: 100.0,),
               Container(
                 color: Color.fromRGBO(235, 235, 255, 1.0),
@@ -257,31 +229,28 @@ class Home extends StatelessWidget {
               ),
 
               Container(
-                // color: Colors.brown,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 800,
+                      height: 650,
                       width: 600,
-                      child: Expanded(
-                        child: Image.asset('assets/golf.png'),
+                      child: SizedBox.expand(
+                        child: Expanded(
+                          child: Container(
+                            child: Image.asset(
+                              'assets/golf.png',
+                              fit: BoxFit.fitHeight,  
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                    // Expanded(
-                    //   child: Card(
-                    //     color: Colors.brown,
-                    //     child: Image.asset(
-                    //       'assets/golf.png',
-                    //       height: 700,
-                    //       width: 700,
-                    //     ),
-                    //   ),
-                    // ),
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
+                        padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 20.0),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             ShaderMask(
                               blendMode: BlendMode.srcIn,
@@ -307,25 +276,26 @@ class Home extends StatelessWidget {
                             Text(
                               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n'
                               'incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus \n'
-                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra nam \n'
+                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra \n'
                               'libero justo laoreet sit amet. Diam ut venenatis tellus in metus vulputate eu\n'
                               'scelerisque. Elementum facilisis leo vel fringilla. Risus sed vulputate odio ut enim\n'
                               'blandit volutpat. Et odio pellentesque diam volutpat. Amet commodo nulla facilisi \n'
                               'nullam vehicula. Turpis egestas integer eget aliquet.\n'
                               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n'
                               'incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus \n'
-                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra nam \n'
+                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra \n'
                               'libero justo laoreet sit amet. Diam ut venenatis tellus in metus vulputate eu\n'
                               'scelerisque. Elementum facilisis leo vel fringilla. Risus sed vulputate odio ut enim\n'
                               'blandit volutpat. Et odio pellentesque diam volutpat. Amet commodo nulla facilisi \n'
                               'nullam vehicula. Turpis egestas integer eget aliquet.\n'
                               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n'
                               'incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus \n'
-                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra nam \n'
+                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra \n'
                               'libero justo laoreet sit amet. Diam ut venenatis tellus in metus vulputate eu\n'
                               'scelerisque. Elementum facilisis leo vel fringilla. Risus sed vulputate odio ut enim\n'
                               'blandit volutpat. Et odio pellentesque diam volutpat. Amet commodo nulla facilisi \n'
                               'nullam vehicula. Turpis egestas integer eget aliquet.\n',
+                              textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 16.0,
                                 color: Color.fromRGBO(111, 111, 111, 1.0),
