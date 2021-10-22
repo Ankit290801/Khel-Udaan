@@ -249,7 +249,7 @@ class HowItWorks extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 100.0),
+                margin: EdgeInsets.only(bottom: 200.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -391,7 +391,7 @@ class HowItWorks extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 100.0),
+                margin: EdgeInsets.only(bottom: 200.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -462,7 +462,7 @@ class HowItWorks extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(bottom: 200.0),
+                margin: EdgeInsets.only(bottom: 150.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
