@@ -8,8 +8,102 @@ class Home extends StatelessWidget {
   @override
 
   Widget build(BuildContext context) {
-    // var media = MediaQuery.of(context).size;
-    return Scaffold(
+    var media = MediaQuery.of(context).size;
+    
+    //Mobile Ui
+    if(media.width <= 600) {
+      return Scaffold(
+        endDrawer: CustomAppBar(),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          iconTheme: IconThemeData(color: Colors.black),
+          elevation: 0.0,
+          title: TextButton(
+            child: Text(
+              'KHEL - UDAAN',
+              style: TextStyle(
+                fontSize: 14.0,
+                color: Colors.black,
+              ),
+            ),
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, '/');
+            }
+          ),
+        ),
+        body: SingleChildScrollView(
+          child: Container(
+            color: Colors.white,
+            child: Column(
+              children: [
+                Container(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20.0, 100.0, 35.0, 50.0),
+                  child: Column(
+                    children: [
+                      ShaderMask(
+                        blendMode: BlendMode.srcIn,
+                        shaderCallback: (rect) => LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            Color.fromRGBO(142, 96, 254, 1.0),
+                            Color.fromRGBO(249, 92, 221, 1.0),
+                          ]
+                        ).createShader(rect),
+                        child: Text(
+                          'Level up your game',
+                          style: TextStyle(
+                          fontSize: 32.0,
+                          letterSpacing: 2.0,
+                          fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 15.0,),
+                      Text(
+                        'Khel-Udaan is a Saas product that helps you reach\n' 
+                        'out to sponsors and get rewarded for your talents.\n'
+                        'Be the best you can be at the sport you love.\n\n',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 30.0,),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Let's Play",
+                          style: TextStyle(
+                            fontSize: 12.0,
+                          ),
+                        ),
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
+                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(35.0, 10.0, 35.0, 10.0)),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                              side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
+    //Web Ui
+    else{
+      return Scaffold(
       appBar: CustomAppBar(),
       body: SingleChildScrollView(
         child: Container(
@@ -607,6 +701,8 @@ class Home extends StatelessWidget {
         )
       )
     );
+
+    }
   }
 }
 
