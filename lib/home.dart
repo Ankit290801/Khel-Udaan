@@ -94,6 +94,537 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
+                Container(
+                  color: Color.fromRGBO(235, 235, 255, 1.0),
+                  padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 30.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          'Trusted by 10+ Investors',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(child: Image.asset('assets/New_Balance-Logo 1.png',height: 54,width: 81,)),
+                          SizedBox(width: 50.0),
+                          Expanded(child: Image.asset('assets/nike 1.png',height: 17,width: 48,)),
+                          SizedBox(width: 50.0),
+                          Expanded(child: Image.asset('assets/puma-logo 1.png',height: 37,width: 69,)),
+                        ],
+                      ),
+                      SizedBox(height: 60.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Expanded(child: Image.asset('assets/redbullenergydrink 1.png',height: 46,width: 82,)),
+                          SizedBox(width: 50.0),
+                          Expanded(child: Image.asset('assets/1200px-Reebok_2019_logo 1.png',height: 40,width: 78,)),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 40.0,),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 58.0),
+                  child: Column(
+                    children: [
+                      ShaderMask(
+                        blendMode: BlendMode.srcIn,
+                        shaderCallback: (rect) => LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            Color.fromRGBO(46, 127, 149, 1.0),
+                            Color.fromRGBO(218, 58, 85, 1.0),
+                          ]
+                        ).createShader(rect),
+                        child: Text(
+                          'MEET OUR ATHLETES',
+                          style: TextStyle(
+                            fontSize: 22.0,
+                            letterSpacing: 1.5,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text(
+                        'Know your Esteemed athletes who have joined and are growing on our platform.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 12.0,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 40.0,),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 77.0),
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'assets/athlete.png',
+                        height: 324,
+                        width: 221,
+                      ),
+                      SizedBox(height: 44.0,),
+                      Image.asset(
+                        'assets/athlete.png',
+                        height: 324,
+                        width: 221,
+                      ),
+                      SizedBox(height: 44.0,),
+                      Image.asset(
+                        'assets/athlete.png',
+                        height: 324,
+                        width: 221,
+                      ),
+                      SizedBox(height: 44.0,),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          'View all',
+                          style: TextStyle(
+                            fontSize: 12.0,
+                          ),
+                        ),
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
+                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(40.0, 10.0, 40.0, 10.0)),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                              side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 40.0,),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 28.0),
+                  child: Column(
+                    children: [
+                      ShaderMask(
+                        blendMode: BlendMode.srcIn,
+                        shaderCallback: (rect) => LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            Color.fromRGBO(40, 161, 98, 1.0),
+                            Color.fromRGBO(93, 124, 212, 1.0),
+                          ]
+                        ).createShader(rect),
+                        child: Text(
+                          'No More keeping records in an old fashioned way',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 22.0,
+                            letterSpacing: 1.5,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Container(
+                        height: 213,
+                        width: 319,
+                        child: SizedBox.expand(
+                          child: Expanded(
+                            child: Container(
+                              child: Image.asset(
+                                'assets/golf.png',
+                                fit: BoxFit.fitHeight,  
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20.0,),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n' 
+                        'sed do eiusmod tempor incididunt ut labore et\n' 
+                        'ore magna aliqua. Integer malesuada nunc vel risus \n'
+                        'commodo viverra maecenas. Urna cursus eget nunc. \n' 
+                        'Semper viverra libero justo\n' 
+                        'laoreet sit amet. Diam ut venenatis tellus in metus\n'
+                        'scelerisque. Elementum facilisis leo vel fringilla.\n' 
+                        'Risus sed vulputate odio ut enim blandit volutpat.\n' 
+                        'Et odio pellentesque diam volutpat. Amet nulla facilisi \n'
+                        'nullam vehicula. Turpis egestas integer eget aliquet.\n'
+                        'Lorem ipsum dolor sit amet,\n' 
+                        'consectetur adipiscing elit, sed do eiusmod tempor\n'
+                        'incididunt ut labore et dolore magna aliqua. Integer\n' 
+                        'malesuada nunc vel risus commodo viverra maecenas.\n' 
+                        'Urna cursus eget nunc scelerisque. Semper viverra \n'
+                        'libero justo laoreet sit amet. Diam ut venenatis\n' 
+                        'tellus in metus vulputate eu\n'
+                        'scelerisque. Elementum facilisis leo vel fringilla.\n' 
+                        'Risus sed vulputate odio ut enim blandit volutpat.\n' 
+                        'Et odio pellentesque diam vommodo nulla facilisi \n'
+                        'nullam vehicula. Turpis nteger eget aliquet.\n'
+                        'Lorem ipsum dolor sit amet.\n' 
+                        'consectetur adipiscing elit, sed do eiusmod tempor\n'
+                        'incididunt ut labore et dolore magna aliqua.\n' 
+                        'Integer malesuada nunc vel risus commodo\n' 
+                        'viverra maecenas. Urna cursus eget nunc scelerisque.\n' 
+                        'Semper viverra \n'
+                        'libero justo laoreet sit amet. Diam ut venenatis\n' 
+                        'tellus in metus vulputate eu scelerisque. Elementum\n' 
+                        'facilisis leo vel fringilla. Risus sed vulputate \n'
+                        'blandit volutpat. Et odio pellentesque diam volutpat.\n' 
+                        'Amet commodo nulla facilisi nullam vehicula. Turpis\n' 
+                        'egestas integer eget aliquet.\n',
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                        ),
+                      ),
+                      SizedBox(height: 30.0,),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          'Know More',
+                          style: TextStyle(
+                            fontSize: 12.0,
+                          ),
+                        ),
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
+                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0)),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                              side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 63.0,),
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                        child: Text(
+                          'Introducing Khel-Udaan, Sports performance Analytics',
+                          style: TextStyle(
+                            fontSize: 12.0,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 15.0,),
+                      ShaderMask(
+                        blendMode: BlendMode.srcIn,
+                        shaderCallback: (rect) => LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            Color.fromRGBO(135, 195, 254, 1.0),
+                            Color.fromRGBO(246, 117, 185, 1.0),
+                          ]
+                        ).createShader(rect),
+                        child: Text(
+                          'The new Analytics experience.\n'
+                          'Powerful. Easy to use. Truly\n unique.',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 22.0,
+                            letterSpacing: 2.0,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 40.0,),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          ImageIcon(
+                            AssetImage('assets/Frame.png'),
+                            size: 68.0,
+                          ),
+                          SizedBox(height: 12.0,),
+                          Text(
+                            '500+ Sports',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(height: 27.0,),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.check,
+                                size: 14.0,
+                              ),
+                              SizedBox(width: 10.0,),
+                              Text(
+                                '500+ Sports',
+                                style: TextStyle(
+                                  fontSize: 12.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 27.0,),
+                          Card(
+                            elevation: 0.0,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.check,
+                                  size: 14.0,
+                                ),
+                                SizedBox(width: 10.0,),
+                                Text(
+                                  '500+ Sports',
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 27.0,),
+                          Card(
+                            elevation: 0.0,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.check,
+                                  size: 14.0,
+                                ),
+                                SizedBox(width: 10.0,),
+                                Text(
+                                  '500+ Sports',
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 37.0,),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text('Know More'),
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
+                              padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0)),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(77.0),
+                                  side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 40.0,),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          ImageIcon(
+                            AssetImage('assets/Frame.png'),
+                            size: 68.0,
+                          ),
+                          SizedBox(height: 12.0,),
+                          Text(
+                            '500+ Sports',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(height: 27.0,),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.check,
+                                size: 14.0,
+                              ),
+                              SizedBox(width: 10.0,),
+                              Text(
+                                '500+ Sports',
+                                style: TextStyle(
+                                  fontSize: 12.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 27.0,),
+                          Card(
+                            elevation: 0.0,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.check,
+                                  size: 14.0,
+                                ),
+                                SizedBox(width: 10.0,),
+                                Text(
+                                  '500+ Sports',
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 27.0,),
+                          Card(
+                            elevation: 0.0,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.check,
+                                  size: 14.0,
+                                ),
+                                SizedBox(width: 10.0,),
+                                Text(
+                                  '500+ Sports',
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 37.0,),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text('Know More'),
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
+                              padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0)),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(77.0),
+                                  side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 40.0,),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          ImageIcon(
+                            AssetImage('assets/Frame.png'),
+                            size: 68.0,
+                          ),
+                          SizedBox(height: 12.0,),
+                          Text(
+                            '500+ Sports',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(height: 27.0,),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.check,
+                                size: 14.0,
+                              ),
+                              SizedBox(width: 10.0,),
+                              Text(
+                                '500+ Sports',
+                                style: TextStyle(
+                                  fontSize: 12.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 27.0,),
+                          Card(
+                            elevation: 0.0,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.check,
+                                  size: 14.0,
+                                ),
+                                SizedBox(width: 10.0,),
+                                Text(
+                                  '500+ Sports',
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 27.0,),
+                          Card(
+                            elevation: 0.0,
+                            color: Colors.transparent,
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.check,
+                                  size: 14.0,
+                                ),
+                                SizedBox(width: 10.0,),
+                                Text(
+                                  '500+ Sports',
+                                  style: TextStyle(
+                                    fontSize: 12.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 37.0,),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text('Know More'),
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
+                              padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0)),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(77.0),
+                                  side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 85.0,),
+                      Footer(),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
