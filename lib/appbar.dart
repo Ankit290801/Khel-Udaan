@@ -22,6 +22,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                   padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 21.0),
                   child: Row(
                     children: [
+                      IconButton(
+                        onPressed: () {}, 
+                        icon: Image.asset('assets/Artboard 1 1.png'),
+                        iconSize: 30.0,
+                      ),
                       TextButton(
                         child: Text(
                           'KHEL - UDAAN',

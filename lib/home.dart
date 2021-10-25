@@ -18,17 +18,30 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.transparent,
           iconTheme: IconThemeData(color: Colors.black),
           elevation: 0.0,
-          title: TextButton(
-            child: Text(
-              'KHEL - UDAAN',
-              style: TextStyle(
-                fontSize: 14.0,
-                color: Colors.black,
+          title: Row(
+            children: [
+              IconButton(
+                onPressed: () {}, 
+                icon: Image.asset(
+                  'assets/Artboard 1 1.png',
+                  width: 48,
+                  height: 61,
+                ),
+                iconSize: 30.0,
               ),
-            ),
-            onPressed: () {
-              Navigator.pushReplacementNamed(context, '/');
-            }
+              TextButton(
+                child: Text(
+                  'KHEL - UDAAN',
+                  style: TextStyle(
+                    fontSize: 14.0,
+                    color: Colors.black,
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, '/');
+                }
+              ),
+            ],
           ),
         ),
         body: SingleChildScrollView(
@@ -96,12 +109,12 @@ class Home extends StatelessWidget {
               ),
                 Container(
                   color: Color.fromRGBO(235, 235, 255, 1.0),
-                  padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 30.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Align(
-                        alignment: Alignment.centerLeft,
+                        alignment: Alignment.center,
                         child: Text(
                           'Trusted by 10+ Investors',
                           style: TextStyle(
@@ -122,13 +135,16 @@ class Home extends StatelessWidget {
                         ],
                       ),
                       SizedBox(height: 60.0),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Expanded(child: Image.asset('assets/redbullenergydrink 1.png',height: 46,width: 82,)),
-                          SizedBox(width: 50.0),
-                          Expanded(child: Image.asset('assets/1200px-Reebok_2019_logo 1.png',height: 40,width: 78,)),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(child: Image.asset('assets/redbullenergydrink 1.png',height: 46,width: 82,)),
+                            SizedBox(width: 50.0),
+                            Expanded(child: Image.asset('assets/1200px-Reebok_2019_logo 1.png',height: 40,width: 78,)),
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -244,7 +260,7 @@ class Home extends StatelessWidget {
                         width: 319,
                         child: SizedBox.expand(
                           child: Expanded(
-                            child: Container(
+                            child: Card(
                               child: Image.asset(
                                 'assets/golf.png',
                                 fit: BoxFit.fitHeight,  

@@ -362,6 +362,35 @@ class Footer extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 58.0,),
+            Divider(
+              color: Colors.white,
+              indent: 1.0,
+            ),
+            SizedBox(height: 10.0,),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                'Khel Udaan',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0,),
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                '\u00a9 2021 All Rights Reserved',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ],
         ),
       );
