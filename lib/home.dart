@@ -259,12 +259,10 @@ class Home extends StatelessWidget {
                         height: 213,
                         width: 319,
                         child: SizedBox.expand(
-                          child: Expanded(
-                            child: Card(
-                              child: Image.asset(
-                                'assets/golf.png',
-                                fit: BoxFit.fitHeight,  
-                              ),
+                          child: Card(
+                            child: Image.asset(
+                              'assets/golf.png',
+                              fit: BoxFit.fitHeight,  
                             ),
                           ),
                         ),
