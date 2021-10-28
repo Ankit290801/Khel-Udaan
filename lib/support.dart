@@ -295,7 +295,7 @@ class SupportedBy extends StatelessWidget {
                           ),
                           style: ButtonStyle(
                             foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(40.0, 10.0, 40.0, 10.0)),
+                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(30.0, 10.0, 31.0, 8.0)),
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20.0),
@@ -344,14 +344,147 @@ class SupportedBy extends StatelessWidget {
                         style: TextStyle(
                           color: Color.fromRGBO(236, 236, 236, 1.0),
                           fontSize: 12.0,
-                          letterSpacing: 1.1,
-                          wordSpacing: 1.1,
                         ),
                       ),
                     ],
                   ),
                 ),
-                //Connect With Us form is left
+                Container(
+                  padding: EdgeInsets.fromLTRB(20, 29, 20, 81),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        'Connect With us',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color.fromRGBO(92, 92, 255, 1.0),
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      SizedBox(height: 25.0,),
+                      Text(
+                        'Name',
+                        style: TextStyle(
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      TextFormField(
+                        expands: false,
+                        decoration: InputDecoration(
+                          fillColor: Color.fromRGBO(249, 249, 249, 1.0),
+                          filled: true,
+                          border: InputBorder.none,
+                        ),
+                      ),
+                      SizedBox(height: 24.0,),
+                      Text(
+                        'Email',
+                        style: TextStyle(
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      TextFormField(
+                        expands: false,
+                        decoration: InputDecoration(
+                          fillColor: Color.fromRGBO(249, 249, 249, 1.0),
+                          filled: true,
+                          border: InputBorder.none,
+                        ),
+                      ),
+                      SizedBox(height: 24.0,),
+                      Text(
+                        'Phone Number',
+                        style: TextStyle(
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      TextFormField(
+                        expands: false,
+                        decoration: InputDecoration(
+                          fillColor: Color.fromRGBO(249, 249, 249, 1.0),
+                          filled: true,
+                          border: InputBorder.none,
+                        ),
+                      ),
+                      SizedBox(height: 24.0,),
+                      Text(
+                        'City',
+                        style: TextStyle(
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      TextFormField(
+                        expands: false,
+                        decoration: InputDecoration(
+                          fillColor: Color.fromRGBO(249, 249, 249, 1.0),
+                          filled: true,
+                          border: InputBorder.none,
+                        ),
+                      ),
+                      SizedBox(height: 24.0,),
+                      Text(
+                        'Message',
+                        style: TextStyle(
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                      SizedBox(height: 10.0,),
+                      TextFormField(
+                        expands: false,
+                        maxLines: 5,
+                        decoration: InputDecoration(
+                          fillColor: Color.fromRGBO(249, 249, 249, 1.0),
+                          filled: true,
+                          border: InputBorder.none,
+                        ),
+                      ),
+                      SizedBox(height: 35.0,),
+                      Align(
+                        alignment: Alignment.center,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Submit',
+                            style: TextStyle(
+                              fontSize: 18.0,
+                            ),
+                          ),
+                          style: ButtonStyle(
+                            foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(95.0, 12.0, 96.0, 11.0)),
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(77.0),
+                                side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 Footer(),
               ],
             ),

@@ -115,7 +115,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                   SizedBox(height: 70.0,),
                   TextButton(
                     child: Text(
-                      'Supported by',
+                      'Get involved',
                       style: TextStyle(
                         fontSize: 22.0,
                       ),
@@ -124,7 +124,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                       foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                     ),
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, '/supported-by');
+                      Navigator.pushReplacementNamed(context, '/get-involved');
                     }
                   ),
                   SizedBox(height: 70.0,),
@@ -257,7 +257,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
             ),
             TextButton(
               child: Text(
-                'Supported by',
+                'Get involved',
                 style: TextStyle(
                   fontSize: 12.0,
                   fontWeight: FontWeight.bold,
@@ -267,7 +267,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
               ),
               onPressed: () {
-                Navigator.pushReplacementNamed(context, '/supported-by');
+                Navigator.pushReplacementNamed(context, '/get-involved');
               }
             ),
             TextButton(

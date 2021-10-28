@@ -9,14 +9,14 @@ import 'package:khel_udaan/why-us.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/supported-by',
+    initialRoute: '/why-us',
     routes: {
       '/': (context) => Home(),
       '/athletes': (context) => Athletes(),
       '/invest': (context) => Invest(),
       '/how-it-works': (context) => HowItWorks(),
       '/why-us': (context) => WhyUs(),
-      '/supported-by': (context) => SupportedBy(),
+      '/get-involved': (context) => SupportedBy(),
       '/contact': (context) => Contact(),
     },
   ));
