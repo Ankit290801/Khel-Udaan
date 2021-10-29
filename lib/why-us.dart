@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
 import 'package:khel_udaan/appbar.dart';
 import 'package:khel_udaan/footer.dart';
 
@@ -48,6 +50,7 @@ class WhyUs extends StatelessWidget {
           child: Container(
             color: Colors.white,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
                   padding: EdgeInsets.fromLTRB(20.0, 38.0, 20.0, 31.0),
@@ -171,6 +174,562 @@ class WhyUs extends StatelessWidget {
                     ),
                   ),
                 ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(25.0, 72.0, 19.0, 93.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'EASE-OF-USE',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(56, 56, 56, 1.0),
+                        ),
+                      ),
+                      SizedBox(height: 6.0,),
+                      Text(
+                        'Built to empower your while team\n'
+                        'and ofcourse you!',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      SizedBox(height: 11.0,),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
+                        'convallis nunc magna. Nullam eu ligula at lorem placerat\n' 
+                        'vestibulum ornare at urna. Suspendisse lacinia purus sit\n' 
+                        'vestibulum tempor rhoncus. Etiam pretium sit amet velit \n' 
+                        'varius. Cras ipsum purus, varius sit amet mauris sit amet, \n'
+                        'dignissim metus. Aenean a rutrum ipsum. Interdum et.',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                          letterSpacing: 0.2,
+                          wordSpacing: 0.3,
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
+                      SizedBox(width: 16.0,),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10.0),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Container(
+                            width: 273,
+                            height: 158,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/dashboard.png',
+                                fit: BoxFit.cover
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Card(
+                  margin: EdgeInsets.fromLTRB(24.0, 0.0, 24.0, 86.0),
+                  color: Color.fromRGBO(30, 178, 152, 1.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(12.0, 4.0, 12.0, 10.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ListTile(
+                          leading: ImageIcon(
+                            AssetImage('assets/award-svgrepo-com 1.png'),
+                            size: 27.0,
+                          ),
+                          title: Text(
+                            'Awards',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 5.0,),
+                        Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing\n' 
+                          'elit. convallis nunc magna. Nullam eu ligula\n' 
+                          'at lorem placerat vestibulum ornare at urna\nconsectetur',
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(height: 10.0,),
+                        Text(
+                            'Emmi',
+                            style: TextStyle(
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.w700,
+                              color: Color.fromRGBO(149, 247, 229, 1.0),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(25.0, 0.0, 19.0, 0.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'EASE-OF-USE',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(56, 56, 56, 1.0),
+                        ),
+                      ),
+                      SizedBox(height: 6.0,),
+                      Text(
+                        'Built to empower your while team\n'
+                        'and ofcourse you!',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      SizedBox(height: 11.0,),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
+                        'convallis nunc magna. Nullam eu ligula at lorem placerat\n' 
+                        'vestibulum ornare at urna. Suspendisse lacinia purus sit\n' 
+                        'vestibulum tempor rhoncus. Etiam pretium sit amet velit \n' 
+                        'varius. Cras ipsum purus, varius sit amet mauris sit amet, \n'
+                        'dignissim metus. Aenean a rutrum ipsum. Interdum et.',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                          letterSpacing: 0.2,
+                          wordSpacing: 0.3,
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
+                      SizedBox(height: 12.0,),
+                    ]
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(31.0, 0.0, 19.0, 43.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        leading: ImageIcon(
+                          AssetImage('assets/6051070eb926f41a679816a3_sleek visualizations 1.png'),
+                          color: Color.fromRGBO(36, 42, 53, 1.0),
+                          size: 50.0,
+                        ),
+                        title: Text(
+                          'Sleek Visualisation',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac amet ac id egestas. consectetur adipiscing ',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                        ),
+                      ),
+                      SizedBox(height: 20.0,),
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        leading: ImageIcon(
+                          AssetImage('assets/6051070eb926f41a679816a3_sleek visualizations 1.png'),
+                          color: Color.fromRGBO(36, 42, 53, 1.0),
+                          size: 50.0,
+                        ),
+                        title: Text(
+                          'Sleek Visualisation',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac amet ac id egestas. consectetur adipiscing ',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Container(
+                    width: 273,
+                    height: 158,
+                    child: SizedBox.expand(
+                      child: Image.asset(
+                        'assets/dashboard.png',
+                        fit: BoxFit.cover
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 103.0,),
+                Card(
+                  margin: EdgeInsets.fromLTRB(24.0, 0.0, 24.0, 86.0),
+                  color: Color.fromRGBO(30, 178, 152, 1.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(12.0, 4.0, 12.0, 10.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ListTile(
+                          leading: ImageIcon(
+                            AssetImage('assets/award-svgrepo-com 1.png'),
+                            size: 27.0,
+                          ),
+                          title: Text(
+                            'Awards',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 5.0,),
+                        Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing\n' 
+                          'elit. convallis nunc magna. Nullam eu ligula\n' 
+                          'at lorem placerat vestibulum ornare at urna\nconsectetur',
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            fontSize: 12.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(height: 10.0,),
+                        Text(
+                            'Emmi',
+                            style: TextStyle(
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.w700,
+                              color: Color.fromRGBO(149, 247, 229, 1.0),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(height: 89.0,),
+                Container(
+                  padding: EdgeInsets.fromLTRB(25.0, 72.0, 19.0, 93.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'EASE-OF-USE',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(56, 56, 56, 1.0),
+                        ),
+                      ),
+                      SizedBox(height: 6.0,),
+                      Text(
+                        'Built to empower your while team\n'
+                        'and ofcourse you!',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      SizedBox(height: 11.0,),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
+                        'convallis nunc magna. Nullam eu ligula at lorem placerat\n' 
+                        'vestibulum ornare at urna. Suspendisse lacinia purus sit\n' 
+                        'vestibulum tempor rhoncus. Etiam pretium sit amet velit \n' 
+                        'varius. Cras ipsum purus, varius sit amet mauris sit amet, \n'
+                        'dignissim metus. Aenean a rutrum ipsum. Interdum et.',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                          letterSpacing: 0.2,
+                          wordSpacing: 0.3,
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
+                      SizedBox(width: 16.0,),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(31.0, 0.0, 19.0, 43.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        leading: ImageIcon(
+                          AssetImage('assets/6051070eb926f41a679816a3_sleek visualizations 1.png'),
+                          color: Color.fromRGBO(36, 42, 53, 1.0),
+                          size: 50.0,
+                        ),
+                        title: Text(
+                          'Sleek Visualisation',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac amet ac id egestas. consectetur adipiscing ',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                        ),
+                      ),
+                      SizedBox(height: 20.0,),
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        leading: ImageIcon(
+                          AssetImage('assets/6051070eb926f41a679816a3_sleek visualizations 1.png'),
+                          color: Color.fromRGBO(36, 42, 53, 1.0),
+                          size: 50.0,
+                        ),
+                        title: Text(
+                          'Sleek Visualisation',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac amet ac id egestas. consectetur adipiscing ',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                        ),
+                      ),
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        leading: ImageIcon(
+                          AssetImage('assets/6051070eb926f41a679816a3_sleek visualizations 1.png'),
+                          color: Color.fromRGBO(36, 42, 53, 1.0),
+                          size: 50.0,
+                        ),
+                        title: Text(
+                          'Sleek Visualisation',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac amet ac id egestas. consectetur adipiscing ',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Color.fromRGBO(11, 33, 34, 1.0),
+                  padding: EdgeInsets.only(top: 26.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        'You’are in good hands',
+                        style: TextStyle(
+                          fontSize: 12.0,
+                          color: Color.fromRGBO(210, 210, 210, 1.0),
+                        ),
+                      ),
+                      SizedBox(height: 66.0,),
+                      Column(
+                        children: [
+                          Text(
+                            '200 Million',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 32.0,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(height: 10.0,),
+                          Text(
+                            'Users Reached',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 69.0,),
+                      Column(
+                        children: [
+                          Text(
+                            '1.3 billion',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 32.0,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(height: 10.0,),
+                          Text(
+                            'Experiences Delivered',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 69.0,),
+                      Column(
+                        children: [
+                          Text(
+                            '2.3 billion',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 32.0,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          SizedBox(height: 10.0,),
+                          Text(
+                            'Events Processed',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 71.0,),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12.0),
+                              ),
+                              color: Color.fromRGBO(50, 73, 74, 1.0),
+                              child: Padding(
+                                padding: const EdgeInsets.fromLTRB(20.0, 21.0, 20.0, 8.0),
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                          'Trust Partner 1',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 18.0,
+                                              fontWeight: FontWeight.w700,
+                                            ),
+                                          ),
+                                          SizedBox(height: 10.0,),
+                                          Text(
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                            'risus lobortis. Nam porta, nisl ac interdum,\n'
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                            'risus lobortis. Nam porta, nisl ac interdum,\n' 
+                                            'massa risus lobortis',
+                                            textAlign: TextAlign.justify,
+                                            style: TextStyle(
+                                              fontSize: 12.0,
+                                              color: Color.fromRGBO(171, 170, 170, 1.0),
+                                            ),
+                                          ),
+                                        ]
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 51.0,),
+                            Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12.0),
+                              ),
+                              color: Color.fromRGBO(50, 73, 74, 1.0),
+                              child: Padding(
+                                padding: const EdgeInsets.fromLTRB(20.0, 21.0, 20.0, 8.0),
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                          'Trust Partner 1',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 18.0,
+                                              fontWeight: FontWeight.w700,
+                                            ),
+                                          ),
+                                          SizedBox(height: 10.0,),
+                                          Text(
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                            'risus lobortis. Nam porta, nisl ac interdum,\n'
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                            'risus lobortis. Nam porta, nisl ac interdum,\n' 
+                                            'massa risus lobortis',
+                                            textAlign: TextAlign.justify,
+                                            style: TextStyle(
+                                              fontSize: 12.0,
+                                              color: Color.fromRGBO(171, 170, 170, 1.0),
+                                            ),
+                                          ),
+                                        ]
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ]
+                        )
+                      )  
+                    ],
+                  ),
+                ),
+                //Try Khel Udaan for free box is left
+                Footer(),
               ],
             ),
           ),
