@@ -15,19 +15,20 @@ class Contact extends StatelessWidget {
       return Scaffold(
         endDrawer: CustomAppBar(),
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           iconTheme: IconThemeData(color: Colors.black),
           elevation: 0.0,
           title: Row(
             children: [
               IconButton(
+                padding: EdgeInsets.fromLTRB(11, 9, 8, 5),
                 onPressed: () {}, 
                 icon: Image.asset(
                   'assets/Artboard 1 1.png',
                   width: 48,
                   height: 61,
                 ),
-                iconSize: 30.0,
+                iconSize: 61.0,
               ),
               TextButton(
                 child: Text(
@@ -52,7 +53,7 @@ class Contact extends StatelessWidget {
               children: [
                 Container(
                   padding: EdgeInsets.fromLTRB(38.0, 32.0, 35.0, 78.0),
-                  color: Color.fromRGBO(13, 13, 31, 1.0),
+                  color: Color.fromRGBO(11, 33, 34, 1.0),
                   child: Column(
                     children: [
                       Text(

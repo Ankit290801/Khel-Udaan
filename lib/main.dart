@@ -9,7 +9,7 @@ import 'package:khel_udaan/why-us.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/why-us',
+    initialRoute: '/',
     routes: {
       '/': (context) => Home(),
       '/athletes': (context) => Athletes(),

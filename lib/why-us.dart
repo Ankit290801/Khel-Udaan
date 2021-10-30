@@ -17,19 +17,21 @@ class WhyUs extends StatelessWidget {
       return Scaffold(
         endDrawer: CustomAppBar(),
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           iconTheme: IconThemeData(color: Colors.black),
           elevation: 0.0,
           title: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               IconButton(
+                padding: EdgeInsets.fromLTRB(11, 9, 8, 5),
                 onPressed: () {}, 
                 icon: Image.asset(
                   'assets/Artboard 1 1.png',
                   width: 48,
                   height: 61,
                 ),
-                iconSize: 30.0,
+                iconSize: 61.0,
               ),
               TextButton(
                 child: Text(
@@ -439,7 +441,7 @@ class WhyUs extends StatelessWidget {
                 ),
                 SizedBox(height: 89.0,),
                 Container(
-                  padding: EdgeInsets.fromLTRB(25.0, 72.0, 19.0, 93.0),
+                  padding: EdgeInsets.fromLTRB(25.0, 72.0, 19.0, 22.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -552,179 +554,248 @@ class WhyUs extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  color: Color.fromRGBO(11, 33, 34, 1.0),
-                  padding: EdgeInsets.only(top: 26.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  margin: EdgeInsets.only(bottom: 125.0),
+                  child: Stack(
+                    clipBehavior: Clip.none,
+                    alignment: Alignment.bottomCenter,
                     children: [
-                      Text(
-                        'You’are in good hands',
-                        style: TextStyle(
-                          fontSize: 12.0,
-                          color: Color.fromRGBO(210, 210, 210, 1.0),
+                      Container(
+                        width: media.width,
+                        color: Color.fromRGBO(11, 33, 34, 1.0),
+                        padding: EdgeInsets.fromLTRB(0.0, 26.0, 0.0, 112.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text(
+                              'You’are in good hands',
+                              style: TextStyle(
+                                fontSize: 12.0,
+                                color: Color.fromRGBO(210, 210, 210, 1.0),
+                              ),
+                            ),
+                            SizedBox(height: 66.0,),
+                            Column(
+                              children: [
+                                Text(
+                                  '200 Million',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 32.0,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                                SizedBox(height: 10.0,),
+                                Text(
+                                  'Users Reached',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 69.0,),
+                            Column(
+                              children: [
+                                Text(
+                                  '1.3 billion',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 32.0,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                                SizedBox(height: 10.0,),
+                                Text(
+                                  'Experiences Delivered',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 69.0,),
+                            Column(
+                              children: [
+                                Text(
+                                  '2.3 billion',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 32.0,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                                SizedBox(height: 10.0,),
+                                Text(
+                                  'Events Processed',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 71.0,),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12.0),
+                                    ),
+                                    color: Color.fromRGBO(50, 73, 74, 1.0),
+                                    child: Padding(
+                                      padding: const EdgeInsets.fromLTRB(20.0, 21.0, 20.0, 8.0),
+                                      child: Column(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                                            child: Column(
+                                              children: [
+                                                Text(
+                                                'Trust Partner 1',
+                                                textAlign: TextAlign.center,
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 18.0,
+                                                    fontWeight: FontWeight.w700,
+                                                  ),
+                                                ),
+                                                SizedBox(height: 10.0,),
+                                                Text(
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                                  'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                                  'risus lobortis. Nam porta, nisl ac interdum,\n'
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                                  'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                                  'risus lobortis. Nam porta, nisl ac interdum,\n' 
+                                                  'massa risus lobortis',
+                                                  textAlign: TextAlign.justify,
+                                                  style: TextStyle(
+                                                    fontSize: 12.0,
+                                                    color: Color.fromRGBO(171, 170, 170, 1.0),
+                                                  ),
+                                                ),
+                                              ]
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 51.0,),
+                                  Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12.0),
+                                    ),
+                                    color: Color.fromRGBO(50, 73, 74, 1.0),
+                                    child: Padding(
+                                      padding: const EdgeInsets.fromLTRB(20.0, 21.0, 20.0, 8.0),
+                                      child: Column(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                                            child: Column(
+                                              children: [
+                                                Text(
+                                                'Trust Partner 1',
+                                                textAlign: TextAlign.center,
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 18.0,
+                                                    fontWeight: FontWeight.w700,
+                                                  ),
+                                                ),
+                                                SizedBox(height: 10.0,),
+                                                Text(
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                                  'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                                  'risus lobortis. Nam porta, nisl ac interdum,\n'
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
+                                                  'Proin fermentum ligula ac nulla fermentum, eget\n' 
+                                                  'risus lobortis. Nam porta, nisl ac interdum,\n' 
+                                                  'massa risus lobortis',
+                                                  textAlign: TextAlign.justify,
+                                                  style: TextStyle(
+                                                    fontSize: 12.0,
+                                                    color: Color.fromRGBO(171, 170, 170, 1.0),
+                                                  ),
+                                                ),
+                                              ]
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ]
+                              )
+                            )  
+                          ],
                         ),
                       ),
-                      SizedBox(height: 66.0,),
-                      Column(
-                        children: [
-                          Text(
-                            '200 Million',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 32.0,
-                              fontWeight: FontWeight.w700,
+                      Positioned(
+                        bottom: -50,
+                        child: Container(
+                          height: 105.0,
+                          width: 326.0,
+                          child: Card(
+                            color: Color.fromRGBO(92, 92, 255, 1.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
                             ),
-                          ),
-                          SizedBox(height: 10.0,),
-                          Text(
-                            'Users Reached',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18.0,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 69.0,),
-                      Column(
-                        children: [
-                          Text(
-                            '1.3 billion',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 32.0,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                          SizedBox(height: 10.0,),
-                          Text(
-                            'Experiences Delivered',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18.0,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 69.0,),
-                      Column(
-                        children: [
-                          Text(
-                            '2.3 billion',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 32.0,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                          SizedBox(height: 10.0,),
-                          Text(
-                            'Events Processed',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18.0,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 71.0,),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12.0),
-                              ),
-                              color: Color.fromRGBO(50, 73, 74, 1.0),
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(20.0, 21.0, 20.0, 8.0),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                          'Trust Partner 1',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 18.0,
-                                              fontWeight: FontWeight.w700,
-                                            ),
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(17.0, 11.0, 19.0, 0.0),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Don't take our word for it. Try Khel-Udaan for free.",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12.0,
+                                      // letterSpacing: 1.5,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  SizedBox(height: 18.0,),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 6.0),
+                                    child: TextFormField(
+                                      style: TextStyle(color: Colors.white),
+                                      decoration: InputDecoration(
+                                        hintText: 'Your Email',
+                                        hintStyle: TextStyle(color: Color.fromRGBO(139, 139, 255, 1.0),),
+                                        contentPadding: EdgeInsets.fromLTRB(12.0, 11.0, 0.0, 12),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(color: Colors.white, width: 1.0),
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(color: Colors.white, width: 1.0),
+                                        ),
+                                        suffixIcon: TextButton(
+                                          style: ButtonStyle(
+                                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                                            foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                                            fixedSize: MaterialStateProperty.all<Size>(Size.fromHeight(38.0)),
                                           ),
-                                          SizedBox(height: 10.0,),
-                                          Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
-                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
-                                            'risus lobortis. Nam porta, nisl ac interdum,\n'
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
-                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
-                                            'risus lobortis. Nam porta, nisl ac interdum,\n' 
-                                            'massa risus lobortis',
-                                            textAlign: TextAlign.justify,
-                                            style: TextStyle(
-                                              fontSize: 12.0,
-                                              color: Color.fromRGBO(171, 170, 170, 1.0),
-                                            ),
+                                          onPressed: () {},
+                                          child: Text(
+                                            "Let's Play",
+                                            style: TextStyle(fontSize: 12.0),
                                           ),
-                                        ]
+                                        ),
                                       ),
                                     ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            SizedBox(height: 51.0,),
-                            Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12.0),
-                              ),
-                              color: Color.fromRGBO(50, 73, 74, 1.0),
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(20.0, 21.0, 20.0, 8.0),
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                          'Trust Partner 1',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 18.0,
-                                              fontWeight: FontWeight.w700,
-                                            ),
-                                          ),
-                                          SizedBox(height: 10.0,),
-                                          Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
-                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
-                                            'risus lobortis. Nam porta, nisl ac interdum,\n'
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing.\n'
-                                            'Proin fermentum ligula ac nulla fermentum, eget\n' 
-                                            'risus lobortis. Nam porta, nisl ac interdum,\n' 
-                                            'massa risus lobortis',
-                                            textAlign: TextAlign.justify,
-                                            style: TextStyle(
-                                              fontSize: 12.0,
-                                              color: Color.fromRGBO(171, 170, 170, 1.0),
-                                            ),
-                                          ),
-                                        ]
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ]
-                        )
-                      )  
+                                  )
+                                ]
+                              )
+                            )
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -1431,8 +1502,8 @@ class WhyUs extends StatelessWidget {
                         child: Container(
                           height: 300.0,
                           width: 1000.0,
-                                      margin: EdgeInsets.symmetric(horizontal: 150.0,),
-                                      child: Card(
+                          margin: EdgeInsets.symmetric(horizontal: 150.0,),
+                          child: Card(
                         color: Color.fromRGBO(118, 97, 255, 1.0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),

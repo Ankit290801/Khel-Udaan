@@ -24,8 +24,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                     children: [
                       IconButton(
                         onPressed: () {}, 
-                        icon: Image.asset('assets/Artboard 1 1.png'),
-                        iconSize: 30.0,
+                        iconSize: 61,
+                        icon: Image.asset(
+                          'assets/Artboard 1 1.png',
+                          height: 61,
+                          width: 48,
+                        ),
                       ),
                       TextButton(
                         child: Text(
@@ -143,26 +147,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
                     }
                   ),
                   SizedBox(height: 70.0,),
-                  // TextButton(
-                  //     child: Text(
-                  //       "Let's Play",
-                  //       style: TextStyle(
-                  //         fontSize: 12.0,
-                  //       ),
-                  //     ),
-                  //     style: ButtonStyle(
-                  //       foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                  //       backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(137, 96, 255, 1.0)),
-                  //       shape: MaterialStateProperty.all<OutlinedBorder>(RoundedRectangleBorder(
-                  //           borderRadius: BorderRadius.circular(20.0),
-                  //         ),
-                  //       ),
-                  //       padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0)),
-                  //     ),
-                  //     onPressed: () {
-                  //       // Navigator.pushReplacementNamed(context, '/athletes');
-                  //     }
-                  //   ),
                     ],
                   ),
                 ),            

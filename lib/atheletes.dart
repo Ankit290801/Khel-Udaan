@@ -25,7 +25,7 @@ class Athletes extends StatelessWidget {
                   width: 48,
                   height: 61,
                 ),
-                iconSize: 30.0,
+                iconSize: 61.0,
               ),
               TextButton(
                 child: Text(
