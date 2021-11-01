@@ -414,9 +414,9 @@ class Footer extends StatelessWidget {
                       Card(
                         child: Expanded(
                           child: Image.asset(
-                            'assets/man.png',
-                            height: 200,
-                            width: 100,
+                            'assets/Artboard 1 2.png',
+                            height: 192,
+                            width: 152,
                           )
                         ),
                       ),

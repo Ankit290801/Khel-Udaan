@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:khel_udaan/appbar.dart';
 import 'package:khel_udaan/footer.dart';
 
@@ -667,7 +669,7 @@ class Home extends StatelessWidget {
             children: [
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20.0, 180.0, 20.0, 50.0),
+                  padding: const EdgeInsets.fromLTRB(20.0, 196.0, 20.0, 50.0),
                   child: Column(
                     children: [
                       ShaderMask(
@@ -683,40 +685,43 @@ class Home extends StatelessWidget {
                         child: Text(
                           'Level up your game',
                           style: TextStyle(
-                          fontSize: 50.0,
+                          fontSize: 64.0,
                           letterSpacing: 3.0,
-                          fontWeight: FontWeight.w900,
+                          fontWeight: FontWeight.w700,
                           ),
                         ),
                       ),
-                      SizedBox(height: 40.0,),
+                      SizedBox(height: 51.0,),
                       Text(
                         'Khel-Udaan is a Saas product that helps you reach out to sponsors and get rewarded for your talents.\n'
                         'Be the best you can be at the sport you love.\n\n',
                         style: TextStyle(
-                          fontSize: 14.0,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromRGBO(52, 52, 52, 1.0),
                         ),
                         textAlign: TextAlign.center,
                       ),
+                      SizedBox(height: 23.0,),
                       Text(
                         'Find and connect with the best sports coaches and training centres around the globe.',
                         style: TextStyle(
-                          fontSize: 14.0,
-                          color: Color.fromRGBO(141, 141, 141, 1.0),
+                          fontSize: 18.0,
+                          color: Color.fromRGBO(52, 52, 52, 1.0),
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 30.0,),
+                      SizedBox(height: 35.0,),
                       TextButton(
                         onPressed: () {},
                         child: Text("Let's Play"),
                         style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 66.0, vertical: 17.0)),
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0),
-                              side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                              borderRadius: BorderRadius.circular(77.0),
+                              side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                             ),
                           ),
                         ),
@@ -725,18 +730,22 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 40.0,),
+              SizedBox(height: 168.0,),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 350.0),
+                // width: 1371,
+                // height: 663,
                 child: Stack(
                   clipBehavior: Clip.none,
+                  alignment: Alignment.center,
                   children: [
                     Container(
-                      height: 300,
-                      width: 575,
-                        child: Expanded(
-                          child: Container(
-                            child: Image.asset('assets/dashboard.png'),
+                      height: 526,
+                      width: 944,
+                        child: SizedBox.expand(
+                          child: Image.asset(
+                            'assets/dashboard.png',
+                            height: 526,
+                            width: 944,  
                           ),
                         ),
                     ),
@@ -744,12 +753,10 @@ class Home extends StatelessWidget {
                       top: 100,
                       right: -40,
                       child: Container(
-                        height: 100,
-                        width: 200,
-                        child: Expanded(
-                          child: Container(
-                            child: Image.asset('assets/dashboard-graph.png'),
-                          ),
+                        height: 289,
+                        width: 333,
+                        child: SizedBox.expand(
+                          child: Image.asset('assets/dashboard-graph.png'),
                         ),
                       )
                     ),
@@ -757,22 +764,20 @@ class Home extends StatelessWidget {
                       bottom: -60,
                       left: -60,
                       child: Container(
-                        height: 150,
-                        width: 150,
-                        child: Expanded(
-                          child: Container(
-                            child: Image.asset('assets/dashboard-health.png'),
-                          ),
+                        height: 171,
+                        width: 197,
+                        child: SizedBox.expand(
+                          child: Image.asset('assets/dashboard-health.png'),
                         ),
                       )
                     ),
                   ],
                 ),
               ),
-              SizedBox(height: 100.0,),
+              
               Container(
                 color: Color.fromRGBO(235, 235, 255, 1.0),
-                padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 30.0),
+                padding: EdgeInsets.fromLTRB(112.0, 37.0, 108.0, 100.0),
                 child: Column(
                   children: [
                     Align(
@@ -780,29 +785,29 @@ class Home extends StatelessWidget {
                       child: Text(
                         'Trusted by 10+ Investors',
                         style: TextStyle(
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.bold,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     ),
-                    SizedBox(height: 20.0),
+                    SizedBox(height: 40.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                        Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                        Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                        Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                        Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
+                        Expanded(child: Image.asset('assets/New_Balance-Logo 1 (2).png',)),
+                        Expanded(child: Image.asset('assets/nike-4-logo-svg-vector 1.png')),
+                        Expanded(child: Image.asset('assets/puma-logo 1 (2).png')),
+                        Expanded(child: Image.asset('assets/redbullenergydrink 1 (2).png')),
+                        Expanded(child: Image.asset('assets/1200px-Reebok_2019_logo 1 (2).png')),
                       ],
                     ),
                   ],
                 ),
               ),
-
+              SizedBox(height: 166.0,),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 100.0),
+                  padding: const EdgeInsets.fromLTRB(148.0, 166.0, 144.0, 220.0),
                   child: Column(
                     children: [
                       ShaderMask(
@@ -818,55 +823,57 @@ class Home extends StatelessWidget {
                         child: Text(
                           'MEET OUR ATHLETES',
                           style: TextStyle(
-                            fontSize: 50.0,
-                            letterSpacing: 1.5,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.redAccent,
+                            fontSize: 64.0,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       ),
-                      SizedBox(height: 10.0,),
+                      SizedBox(height: 26.0,),
                       Text(
                         'Know your Esteemed athletes who have joined and are growing on our platform.',
                         style: TextStyle(
-                          fontSize: 14.0,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromRGBO(52, 52, 52, 1.0),
                         ),
                       ),
-                      SizedBox(height: 80.0,),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 50.0),
-                        child: Row(                        
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Image.asset(
-                               'assets/athlete.png',
-                               height: 450,
-                               width: 300,
-                            ),
-                            Image.asset(
-                               'assets/athlete.png',
-                               height: 450,
-                               width: 300,
-                            ),
-                            Image.asset(
-                               'assets/athlete.png',
-                               height: 450,
-                               width: 300,
-                            ),
-                          ],
-                        ),
+                      SizedBox(height: 132.0,),
+                      Row(                        
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset(
+                             'assets/Rectangle 40.png',
+                             width: 328,
+                             height: 526,
+                          ),
+                          Image.asset(
+                             'assets/Rectangle 41.png',
+                              width: 328,
+                              height: 526,
+                          ),
+                          Image.asset(
+                             'assets/Rectangle 42.png',
+                              width: 328,
+                              height: 526,
+                          ),
+                        ],
                       ),
-                      SizedBox(height: 50.0,),
+                      SizedBox(height: 77.0,),
                       TextButton(
                         onPressed: () {},
-                        child: Text("View All"),
+                        child: Text(
+                          "View All",
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
                         style: ButtonStyle(
-                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(63.0, 15.0, 64.0, 13.0)),
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0),
-                              side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                              borderRadius: BorderRadius.circular(77.0),
+                              side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                             ),
                           ),
                         ),
@@ -881,22 +888,18 @@ class Home extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 650,
-                      width: 600,
+                      height: 812,
+                      width: 572,
                       child: SizedBox.expand(
-                        child: Expanded(
-                          child: Container(
-                            child: Image.asset(
-                              'assets/golf.png',
-                              fit: BoxFit.fitHeight,  
-                            ),
-                          ),
+                        child: Image.asset(
+                          'assets/courtney-cook-SsIIw_MET0E-unsplash 1.png',
+                          fit: BoxFit.fitHeight,  
                         ),
                       ),
                     ),
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 20.0),
+                        padding: EdgeInsets.fromLTRB(82.0, 15.0, 95.0, 15.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -913,39 +916,23 @@ class Home extends StatelessWidget {
                               child: Text(
                                 'No More keeping records in an old fashioned way',
                                 style: TextStyle(
-                                  fontSize: 45.0,
-                                  letterSpacing: 1.5,
-                                  color: Colors.redAccent,
-                                  fontWeight: FontWeight.bold,
+                                  fontSize: 54.0,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 0.5,
+                                  wordSpacing: 0.5,
                                 ),
                               ),
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 33.0,),
                             Text(
-                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n'
-                              'incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus \n'
-                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra \n'
-                              'libero justo laoreet sit amet. Diam ut venenatis tellus in metus vulputate eu\n'
-                              'scelerisque. Elementum facilisis leo vel fringilla. Risus sed vulputate odio ut enim\n'
-                              'blandit volutpat. Et odio pellentesque diam volutpat. Amet commodo nulla facilisi \n'
-                              'nullam vehicula. Turpis egestas integer eget aliquet.\n'
-                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n'
-                              'incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus \n'
-                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra \n'
-                              'libero justo laoreet sit amet. Diam ut venenatis tellus in metus vulputate eu\n'
-                              'scelerisque. Elementum facilisis leo vel fringilla. Risus sed vulputate odio ut enim\n'
-                              'blandit volutpat. Et odio pellentesque diam volutpat. Amet commodo nulla facilisi \n'
-                              'nullam vehicula. Turpis egestas integer eget aliquet.\n'
-                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n'
-                              'incididunt ut labore et dolore magna aliqua. Integer malesuada nunc vel risus \n'
-                              'commodo viverra maecenas. Urna cursus eget nunc scelerisque. Semper viverra \n'
-                              'libero justo laoreet sit amet. Diam ut venenatis tellus in metus vulputate eu\n'
-                              'scelerisque. Elementum facilisis leo vel fringilla. Risus sed vulputate odio ut enim\n'
-                              'blandit volutpat. Et odio pellentesque diam volutpat. Amet commodo nulla facilisi \n'
-                              'nullam vehicula. Turpis egestas integer eget aliquet.\n',
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae pellentesque sit gravida dui sit tortor. Suscipit quam praesent tortor pretium adipiscing luctus cursus condimentum. Eu egestas vulputate lacus neque odio. Bibendum neque, facilisis a blandit.'
+                              'Ut scelerisque est, risus, amet quam at fermentum. Dignissim sapien, neque sed leo mi mattis sed. Suspendisse suscipit massa nisi risus odio rhoncus. Cursus tempor, est natoque interdum facilisi. Donec vitae, in non id. Velit velit pharetra ut imperdiet mauris, laoreet.\n'
+                              'Neque, volutpat penatibus tortor aliquam, rhoncus consectetur posuere purus et. Diam elementum aliquet volutpat montes, egestas convallis orci, id eu. Tortor, aliquam augue adipiscing neque lectus fringilla at pharetra phasellus. Sed semper eget nibh nullam consectetur. Purus tincidunt fames arcu amet gravida justo odio venenatis. Maecenas aliquet et, lectus blandit eget id amet. Dui lorem pretium sed nulla morbi posuere varius ultrices natoque. Vitae sed mus placerat magna. Convallis diam dignissim vel lectus ornare mi, amet. Accumsan et, nibh accumsan eget. Ullamcorper nibh a quam nullam. Vel mattis nec enim blandit cursus sed nulla sed aliquam. Aliquet tristique nunc dignissim sed dui, non sed lectus.\n'
+                              'Neque malesuada et mauris turpis aliquam, pellentesque sociis. Pellentesque imperdiet pellentesque sociis. Pellentesque imperdiet pellentesque sociis. Pellentesque imperdiet'
+                              'que malesuada et mauris turpis aliquam, pellentesque sociis. Pellentesque imperdiet pellentesque sociis. Pellentesque imperdiet pellentesque sociis. Pellentesque imperdiet,',
                               textAlign: TextAlign.justify,
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 20.0,
                                 color: Color.fromRGBO(111, 111, 111, 1.0),
                               ),
                             ),
@@ -954,14 +941,19 @@ class Home extends StatelessWidget {
                               alignment: Alignment.centerLeft,
                               child: TextButton(
                                 onPressed: () {},
-                                child: Text('Know More'),
+                                child: Text(
+                                  'Know More',
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                  ),
+                                ),
                                 style: ButtonStyle(
-                                  foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                                  padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                                  foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                                  padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(49.0, 15.0, 50.0, 13.0)),
                                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                     RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                      side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                      borderRadius: BorderRadius.circular(77.0),
+                                      side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                                     ),
                                   ),
                                 ),
@@ -975,7 +967,7 @@ class Home extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 100.0, vertical: 100.0),
+                padding: EdgeInsets.fromLTRB(133.0, 239.0, 163.0,306.0),
                 child: Column(
                   children: [
                     Align(
@@ -983,7 +975,8 @@ class Home extends StatelessWidget {
                       child: Text(
                         'Introducing Khel-Udaan, Sports performance Analytics',
                         style: TextStyle(
-                          fontSize: 12.0,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
@@ -1004,33 +997,31 @@ class Home extends StatelessWidget {
                           'The new Analytics experience.\n'
                           'Powerful. Easy to use. Truly unique.',
                           style: TextStyle(
-                            fontSize: 40.0,
-                            color: Colors.redAccent,
-                            letterSpacing: 2.0,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 64.0,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(height: 80.0,),
+                    SizedBox(height: 108.0,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
                           children: [
-                            Icon(
-                              Icons.pie_chart_rounded,
-                              size: 50.0,
+                            ImageIcon(
+                              AssetImage('assets/Frame (2).png'),
+                              size: 76.0,
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 36.0,),
                             Text(
                               '500+ Sports',
                               style: TextStyle(
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.w800,
+                                fontSize: 23.0,
+                                fontWeight: FontWeight.w700,
                               ),
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 34.0,),
                             Card(
                               elevation: 0.0,
                               color: Colors.transparent,
@@ -1038,10 +1029,16 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -1053,10 +1050,16 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -1068,24 +1071,35 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
-                            SizedBox(height: 40.0,),
+                            SizedBox(height: 72.0,),
                             TextButton(
                               onPressed: () {},
-                              child: Text('Know More'),
+                              child: Text(
+                                'Know More',
+                                style: TextStyle(
+                                  fontSize: 18.0,
+                                ),
+                              ),
                               style: ButtonStyle(
-                                foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                                foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(49.0, 15.0, 50.0, 13.0)),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20.0),
-                                    side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                    borderRadius: BorderRadius.circular(77.0),
+                                    side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                                   ),
                                 ),
                               ),
@@ -1094,19 +1108,19 @@ class Home extends StatelessWidget {
                         ),
                         Column(
                           children: [
-                            Icon(
-                              Icons.pie_chart_rounded,
-                              size: 50.0,
+                            ImageIcon(
+                              AssetImage('assets/Frame (2).png'),
+                              size: 76.0,
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 36.0,),
                             Text(
                               '500+ Sports',
                               style: TextStyle(
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.w800,
+                                fontSize: 23.0,
+                                fontWeight: FontWeight.w700,
                               ),
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 34.0,),
                             Card(
                               elevation: 0.0,
                               color: Colors.transparent,
@@ -1114,10 +1128,16 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -1129,10 +1149,16 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -1144,24 +1170,35 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
-                            SizedBox(height: 40.0,),
+                            SizedBox(height: 72.0,),
                             TextButton(
                               onPressed: () {},
-                              child: Text('Know More'),
+                              child: Text(
+                                'Know More',
+                                style: TextStyle(
+                                  fontSize: 18.0,
+                                ),
+                              ),
                               style: ButtonStyle(
-                                foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                                foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(49.0, 15.0, 50.0, 13.0)),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20.0),
-                                    side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                    borderRadius: BorderRadius.circular(77.0),
+                                    side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                                   ),
                                 ),
                               ),
@@ -1170,19 +1207,19 @@ class Home extends StatelessWidget {
                         ),
                         Column(
                           children: [
-                            Icon(
-                              Icons.pie_chart_rounded,
-                              size: 50.0,
+                            ImageIcon(
+                              AssetImage('assets/Frame (2).png'),
+                              size: 76.0,
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 36.0,),
                             Text(
                               '500+ Sports',
                               style: TextStyle(
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.w800,
+                                fontSize: 23.0,
+                                fontWeight: FontWeight.w700,
                               ),
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 34.0,),
                             Card(
                               elevation: 0.0,
                               color: Colors.transparent,
@@ -1190,10 +1227,16 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -1205,10 +1248,16 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -1220,24 +1269,35 @@ class Home extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.check,
-                                    size: 20.0,
+                                    size: 14.0,
                                   ),
-                                  SizedBox(width: 10.0,),
-                                  Text('500+ Sports'),
+                                  SizedBox(width: 19.0,),
+                                  Text(
+                                    '500+ Sports',
+                                    style: TextStyle(
+                                      fontSize: 23.0,
+                                      color: Color.fromRGBO(86, 86, 86, 1.0),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
-                            SizedBox(height: 40.0,),
+                            SizedBox(height: 72.0,),
                             TextButton(
                               onPressed: () {},
-                              child: Text('Know More'),
+                              child: Text(
+                                'Know More',
+                                style: TextStyle(
+                                  fontSize: 18.0,
+                                ),
+                              ),
                               style: ButtonStyle(
-                                foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                                foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(49.0, 15.0, 50.0, 13.0)),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20.0),
-                                    side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                    borderRadius: BorderRadius.circular(77.0),
+                                    side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                                   ),
                                 ),
                               ),
