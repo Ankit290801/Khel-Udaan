@@ -353,21 +353,22 @@ class HowItWorks extends StatelessWidget {
                               child: Text(
                                 'Set up. Set aside.\n'
                                 'Get on with your life.',
+                                textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontSize: 50.0,
-                                  fontWeight: FontWeight.bold,
+                                  fontSize: 64.0,
+                                  fontWeight: FontWeight.w700,
                                   letterSpacing: 2.0,
                                 ),
                               ),
                             ),
-                            SizedBox(height: 20.0,),
+                            SizedBox(height: 26.0,),
                             Text(
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu\n' 
-                              'cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat\n' 
-                              'sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis',
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi, in nulla lacus egestas dictum\n' 
+                              'convallis. Amet congue id tincidunt neque amet in elementum eget vitae. Duis quam sodales\n' 
+                              'tempor feugiat ullamcorper faucibus ac nibh. Arcu adipiscing metus, massa quam.',
                               style: TextStyle(
-                                color: Color.fromRGBO(137, 137, 141, 1.0),
-                                fontSize: 16.0,
+                                color: Color.fromRGBO(166, 166, 166, 1.0),
+                                fontSize: 18.0,
                               ),
                               textAlign: TextAlign.center,
                             ),
@@ -426,67 +427,68 @@ class HowItWorks extends StatelessWidget {
                 SizedBox(height: 50.0,),
                 Container(
                   color: Color.fromRGBO(235, 235, 255, 1.0),
-                  padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 30.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Align(
                         alignment: Alignment.center,
                         child: Text(
-                          'Sponsored by 20+ brands including .......',
+                          'Sponsored by 20+ brands including......',
                           style: TextStyle(
-                            fontSize: 14.0,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w400,
                           ),
                         ),
                       ),
-                      SizedBox(height: 20.0),
+                      SizedBox(height: 66.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                          Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                          Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                          Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
-                          Expanded(child: Image.asset('assets/nike.png',height: 100,width: 100,)),
+                          Expanded(child: Image.asset('assets/New_Balance-Logo 1 (2).png',)),
+                          Expanded(child: Image.asset('assets/nike-4-logo-svg-vector 1.png')),
+                          Expanded(child: Image.asset('assets/puma-logo 1 (2).png')),
+                          Expanded(child: Image.asset('assets/redbullenergydrink 1 (2).png')),
+                          Expanded(child: Image.asset('assets/1200px-Reebok_2019_logo 1 (2).png')),
                         ],
                       ),
                     ],
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 30.0, vertical: 80.0),
+                  margin: EdgeInsets.symmetric(horizontal: 30.0, vertical: 78.0),
                   child: Column(
                     children: [
-                    ShaderMask(
-                      blendMode: BlendMode.srcIn,
-                        shaderCallback: (rect) => LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [
-                            Color.fromRGBO(34, 104, 132, 1.0),
-                            Color.fromRGBO(237, 51, 99, 1.0),
-                          ]
-                        ).createShader(rect),
-                      child: Text(
-                        'It works like a Charm',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 50.0,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.5,
+                      ShaderMask(
+                        blendMode: BlendMode.srcIn,
+                          shaderCallback: (rect) => LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              Color.fromRGBO(34, 104, 132, 1.0),
+                              Color.fromRGBO(237, 51, 99, 1.0),
+                            ]
+                          ).createShader(rect),
+                        child: Text(
+                          'It works like a Charm',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 64.0,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ),
-                    ),
-                  SizedBox(height: 20.0,),
-                  Text(
-                    'sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras\n' 
-                    ' pulvinar mattis nunc sed blandit libero volutpat\n' ,
-                    style: TextStyle(
-                      color: Color.fromRGBO(137, 137, 141, 1.0),
-                      fontSize: 14.0,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  ],
+                      SizedBox(height: 31.0,),
+                      Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                        'consequat. Ac amet ac id egestas. Neque pellentesque matti' ,
+                        style: TextStyle(
+                          color: Color.fromRGBO(111, 111, 111, 1.0),
+                          fontSize: 18.0,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
                   ),
                 ),
                 // Need to work on the overall performance stack section
@@ -497,7 +499,7 @@ class HowItWorks extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 150.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 100.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -510,16 +512,15 @@ class HowItWorks extends StatelessWidget {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit libero volutpat quis\n\n'
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit\n' ,
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing\n' 
+                              'sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                              'consequat. Ac amet ac id egestas. Neque pellentesque mattis sollicitudin\n' 
+                              'vitae praesent tincidunt in id gravida. Neque mauris duis donec ultricies\n' 
+                              'vitae nec. Tristique turpis eget vel feugiat risus. Quisque rhoncus\n' 
+                              'pellentesque nunc augue eget lobortis in odio dictumst.',
                               style: TextStyle(
-                                color: Color.fromRGBO(137, 137, 141, 1.0),
-                                fontSize: 14.0,
-                                wordSpacing: 1.5,
+                                color: Color.fromRGBO(111, 111, 111, 1.0),
+                                fontSize: 18.0,
                               ),
                               textAlign: TextAlign.justify,
                             ),
@@ -527,27 +528,27 @@ class HowItWorks extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 40.0),
+                        padding: EdgeInsets.only(right: 40.0),
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
                             Container(
-                              height: 400,
-                              width: 400,
-                              color: Colors.blue,
+                              height: 420,
+                              width: 505,
+                              color: Color.fromRGBO(92, 92, 255, 1.0),
                             ),
                             Positioned(
                               bottom: -50,
                               left: -50,
                               child: Container(
                                 height: 400,
-                                width: 400,
+                                width: 495,
                                 child: SizedBox.expand(
                                   child: Expanded(
                                     child: Card(
                                       elevation: 5.0,
                                       child: Image.asset(
-                                        'assets/dashboard-health.png',
+                                        'assets/Group 23 1.png',
                                         fit: BoxFit.fitHeight,  
                                       ),
                                     ),
@@ -568,27 +569,27 @@ class HowItWorks extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 150.0),
+                        padding: EdgeInsets.only(left: 40.0),
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
                             Container(
-                              height: 400,
-                              width: 400,
-                              color: Colors.blue,
+                              height: 420,
+                              width: 505,
+                              color: Color.fromRGBO(92, 92, 255, 1.0),
                             ),
                             Positioned(
                               bottom: -50,
                               left: -50,
                               child: Container(
                                 height: 400,
-                                width: 400,
+                                width: 495,
                                 child: SizedBox.expand(
                                   child: Expanded(
                                     child: Card(
                                       elevation: 5.0,
                                       child: Image.asset(
-                                        'assets/dashboard-health.png',
+                                        'assets/Group 23 1.png',
                                         fit: BoxFit.fitHeight,  
                                       ),
                                     ),
@@ -613,16 +614,15 @@ class HowItWorks extends StatelessWidget {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit libero volutpat quis\n\n'
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit\n' ,
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing\n' 
+                              'sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                              'consequat. Ac amet ac id egestas. Neque pellentesque mattis sollicitudin\n' 
+                              'vitae praesent tincidunt in id gravida. Neque mauris duis donec ultricies\n' 
+                              'vitae nec. Tristique turpis eget vel feugiat risus. Quisque rhoncus\n' 
+                              'pellentesque nunc augue eget lobortis in odio dictumst.',
                               style: TextStyle(
-                                color: Color.fromRGBO(137, 137, 141, 1.0),
-                                fontSize: 14.0,
-                                wordSpacing: 1.5,
+                                color: Color.fromRGBO(111, 111, 111, 1.0),
+                                fontSize: 18.0,
                               ),
                               textAlign: TextAlign.justify,
                             ),
@@ -639,7 +639,7 @@ class HowItWorks extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 150.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 40.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -652,16 +652,15 @@ class HowItWorks extends StatelessWidget {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit libero volutpat quis\n\n'
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit\n' ,
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing\n' 
+                              'sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                              'consequat. Ac amet ac id egestas. Neque pellentesque mattis sollicitudin\n' 
+                              'vitae praesent tincidunt in id gravida. Neque mauris duis donec ultricies\n' 
+                              'vitae nec. Tristique turpis eget vel feugiat risus. Quisque rhoncus\n' 
+                              'pellentesque nunc augue eget lobortis in odio dictumst.',
                               style: TextStyle(
-                                color: Color.fromRGBO(137, 137, 141, 1.0),
-                                fontSize: 14.0,
-                                wordSpacing: 1.5,
+                                color: Color.fromRGBO(111, 111, 111, 1.0),
+                                fontSize: 18.0,
                               ),
                               textAlign: TextAlign.justify,
                             ),
@@ -669,27 +668,27 @@ class HowItWorks extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 40.0),
+                        padding: EdgeInsets.only(right: 40.0),
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
                             Container(
-                              height: 400,
-                              width: 400,
-                              color: Colors.blue,
+                              height: 420,
+                              width: 505,
+                              color: Color.fromRGBO(92, 92, 255, 1.0),
                             ),
                             Positioned(
                               bottom: -50,
                               left: -50,
                               child: Container(
                                 height: 400,
-                                width: 400,
+                                width: 495,
                                 child: SizedBox.expand(
                                   child: Expanded(
                                     child: Card(
                                       elevation: 5.0,
                                       child: Image.asset(
-                                        'assets/dashboard-health.png',
+                                        'assets/Group 23 1.png',
                                         fit: BoxFit.fitHeight,  
                                       ),
                                     ),
@@ -710,27 +709,27 @@ class HowItWorks extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 150.0),
+                        padding: EdgeInsets.only(left: 40.0),
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
                             Container(
-                              height: 400,
-                              width: 400,
-                              color: Colors.blue,
+                              height: 420,
+                              width: 505,
+                              color: Color.fromRGBO(92, 92, 255, 1.0),
                             ),
                             Positioned(
                               bottom: -50,
                               left: -50,
                               child: Container(
                                 height: 400,
-                                width: 400,
+                                width: 495,
                                 child: SizedBox.expand(
                                   child: Expanded(
                                     child: Card(
                                       elevation: 5.0,
                                       child: Image.asset(
-                                        'assets/dashboard-health.png',
+                                        'assets/Group 23 1.png',
                                         fit: BoxFit.fitHeight,  
                                       ),
                                     ),
@@ -755,16 +754,15 @@ class HowItWorks extends StatelessWidget {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit libero volutpat quis\n\n'
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit\n' ,
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing\n' 
+                              'sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                              'consequat. Ac amet ac id egestas. Neque pellentesque mattis sollicitudin\n' 
+                              'vitae praesent tincidunt in id gravida. Neque mauris duis donec ultricies\n' 
+                              'vitae nec. Tristique turpis eget vel feugiat risus. Quisque rhoncus\n' 
+                              'pellentesque nunc augue eget lobortis in odio dictumst.',
                               style: TextStyle(
-                                color: Color.fromRGBO(137, 137, 141, 1.0),
-                                fontSize: 14.0,
-                                wordSpacing: 1.5,
+                                color: Color.fromRGBO(111, 111, 111, 1.0),
+                                fontSize: 18.0,
                               ),
                               textAlign: TextAlign.justify,
                             ),
@@ -781,7 +779,7 @@ class HowItWorks extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 150.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 40.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -794,16 +792,15 @@ class HowItWorks extends StatelessWidget {
                             ),
                             SizedBox(height: 20.0),
                             Text(
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit libero volutpat quis\n\n'
-                              'sed faucibus turpis in eu mi bibendum neque egestas congue\n\n' 
-                              'quisque egestas diam in arcu cursus euismod quis viverra nibh\n\n' 
-                              'cras pulvinar mattis nunc sed blandit\n' ,
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing\n' 
+                              'sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                              'consequat. Ac amet ac id egestas. Neque pellentesque mattis sollicitudin\n' 
+                              'vitae praesent tincidunt in id gravida. Neque mauris duis donec ultricies\n' 
+                              'vitae nec. Tristique turpis eget vel feugiat risus. Quisque rhoncus\n' 
+                              'pellentesque nunc augue eget lobortis in odio dictumst.',
                               style: TextStyle(
-                                color: Color.fromRGBO(137, 137, 141, 1.0),
-                                fontSize: 14.0,
-                                wordSpacing: 1.5,
+                                color: Color.fromRGBO(111, 111, 111, 1.0),
+                                fontSize: 18.0,
                               ),
                               textAlign: TextAlign.justify,
                             ),
@@ -811,27 +808,29 @@ class HowItWorks extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 40.0),
+                        padding: EdgeInsets.only(right: 40.0),
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
                             Container(
-                              height: 400,
-                              width: 400,
-                              color: Colors.blue,
+                              height: 420,
+                              width: 505,
+                              color: Color.fromRGBO(92, 92, 255, 1.0),
                             ),
                             Positioned(
                               bottom: -50,
                               left: -50,
                               child: Container(
                                 height: 400,
-                                width: 400,
+                                width: 495,
                                 child: SizedBox.expand(
-                                  child: Card(
-                                    elevation: 5.0,
-                                    child: Image.asset(
-                                      'assets/dashboard-health.png',
-                                      fit: BoxFit.fitHeight,  
+                                  child: Expanded(
+                                    child: Card(
+                                      elevation: 5.0,
+                                      child: Image.asset(
+                                        'assets/Group 23 1.png',
+                                        fit: BoxFit.fitHeight,  
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -847,40 +846,44 @@ class HowItWorks extends StatelessWidget {
                 Container(
                   color: Color.fromRGBO(237, 231, 255, 1.0),
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 50.0),
+                    padding: const EdgeInsets.fromLTRB(30.0, 58.0, 30.0, 81.0),
                     child: Column(
                       children: [
                         Text(
                           'Fascinated at how easily it works ?',
                           style: TextStyle(
-                            fontSize: 40.0,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5,
+                            fontSize: 46.0,
+                            fontWeight: FontWeight.w700,
                             color: Color.fromRGBO(0, 0, 94, 1.0),
                           ),
                         ),
-                        SizedBox(height: 20.0,),
+                        SizedBox(height: 28.0,),
                         Text(
-                          'sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu\n' 
-                          'cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat\n' 
-                          'sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis',
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi, in nulla lacus egestas dictum convallis.\n' 
+                          'Amet congue id tincidunt neque amet in elementum eget vitae. Duis quam sodales tempor feugiat\n' 
+                          'ullamcorper faucibus ac nibh. Arcu adipiscing metus, massa quam. ',
                           style: TextStyle(
-                            color: Color.fromRGBO(78, 60, 121, 1.0),
-                            fontSize: 16.0,
+                            color: Color.fromRGBO(55, 36, 102, 1.0),
+                            fontSize: 18.0,
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(height: 50.0,),
+                        SizedBox(height: 70.0,),
                         TextButton(
                           onPressed: () {},
-                          child: Text("Let's Play"),
+                          child: Text(
+                            "Let's Play",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                            ),
+                          ),
                           style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                            foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(66.0, 17.0, 66.0, 17.0)),
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                borderRadius: BorderRadius.circular(77.0),
+                                side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                               ),
                             ),
                           ),

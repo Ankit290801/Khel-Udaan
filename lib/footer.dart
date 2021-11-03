@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class Footer extends StatelessWidget {
   const Footer({ Key? key }) : super(key: key);
@@ -399,9 +401,10 @@ class Footer extends StatelessWidget {
     else {
 
       return Container(
-        padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 40.0),
+        padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 48.0),
         color: Color.fromRGBO(92, 92, 255, 1.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -411,20 +414,19 @@ class Footer extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(30.0, 0.0, 50.0, 0.0),
                   child: Column(
                     children: [
-                      Card(
-                        child: Expanded(
-                          child: Image.asset(
-                            'assets/Artboard 1 2.png',
-                            height: 192,
-                            width: 152,
-                          )
-                        ),
+                      ImageIcon(
+                        AssetImage('assets/Artboard 1 2.png'),
+                        size: 152,
+                        color: Colors.white,
                       ),
+                      SizedBox(height: 41.0),
                       Text(
-                        'KHEL-UDAAN',
+                        'KHEL- UDAAN',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18.0,
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w700,
+                          fontFamily: 'Mulish',
                         ),
                       ),
                     ],
@@ -437,45 +439,69 @@ class Footer extends StatelessWidget {
                     Text(
                       'COMPANY',
                       style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Partners'),
+                      child: Text(
+                        'Partners',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Pricing'),
+                      child: Text(
+                        'Pricing',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('About'),
+                      child: Text(
+                        'About',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Contact'),
+                      child: Text(
+                        'Contact',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
                   ],
@@ -487,54 +513,84 @@ class Footer extends StatelessWidget {
                     Text(
                       'PRODUCT',
                       style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Features'),
+                      child: Text(
+                        'Features',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Pricing'),
+                      child: Text(
+                        'Pricing',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('About'),
+                      child: Text(
+                        'About',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Partnership'),
+                      child: Text(
+                        'Partnership',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Invest'),
+                      child: Text(
+                        'Invest',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
                   ],
@@ -546,45 +602,69 @@ class Footer extends StatelessWidget {
                     Text(
                       'RESOURCES',
                       style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Features'),
+                      child: Text(
+                        'Features',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Pricing'),
+                      child: Text(
+                        'Pricing',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('About'),
+                      child: Text(
+                        'About',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Contact'),
+                      child: Text(
+                        'Contact',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
                   ],
@@ -596,102 +676,176 @@ class Footer extends StatelessWidget {
                     Text(
                       'COMMUNITY',
                       style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Features'),
+                      child: Text(
+                        'Features',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Pricing'),
+                      child: Text(
+                        'Pricing',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('About'),
+                      child: Text(
+                        'About',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 27.0,),
                     TextButton(
                       onPressed: () {},
-                      child: Text('Contact'),
+                      child: Text(
+                        'Contact',
+                        style: TextStyle(
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                        alignment: Alignment.centerLeft,
+                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.zero),
                       ),
                     ),
                   ],
                 ),
               ],
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 44.0),
             Divider(
               color: Colors.white,
             ),
+            SizedBox(height: 38.0),
             Row(
               children: [
                 Row(
                   children: [
-                    Icon(
-                      Icons.facebook,
-                      color: Colors.white
+                    ImageIcon(
+                      AssetImage('assets/facebook 1.png'),
+                      size: 25,
+                      color: Colors.white,
                     ),
-                    Icon(
-                      Icons.facebook,
-                      color: Colors.white
+                    SizedBox(width: 40.0,),
+                    ImageIcon(
+                      AssetImage('assets/twitter 1.png'),
+                      size: 22,
+                      color: Colors.white,
                     ),
-                    Icon(
-                      Icons.facebook,
-                      color: Colors.white
+                    SizedBox(width: 40.0,),
+                    ImageIcon(
+                      AssetImage('assets/instagram (1) 1.png'),
+                      size: 25,
+                      color: Colors.white,
                     ),
-                    Icon(
-                      Icons.facebook,
-                      color: Colors.white
+                    SizedBox(width: 40.0,),
+                    ImageIcon(
+                      AssetImage('assets/linkedin 1.png'),
+                      size: 25,
+                      color: Colors.white,
                     ),
                   ],
                 ),
-                Row(
-                  children: [
-                    Text(
-                      'Khel Udaan   |   ',
+                Expanded(
+                  child: Center(
+                    child: Text(
+                      'Khel Udaan   |   \u00a9  2021 All Rights Reserved',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 16.0,
+                        fontSize: 22.0,
                       ),
                     ),
-                    // VerticalDivider(
-                    //   color: Colors.white,
-                    //   width: 2.0,
-                    //   thickness: 20.0,
-                    // ),
-                    Text(
-                      '\u00a9  2021 All Rights Reserved',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ],
+                  )
                 ),
               ],
-            ),
+            )
+            // Row(
+            //   children: [
+            //     Row(
+            //       children: [
+            //         ImageIcon(
+            //           AssetImage('assets/facebook 1.png'),
+            //           size: 25,
+            //           color: Colors.white,
+            //         ),
+            //         SizedBox(width: 40.0,),
+            //         ImageIcon(
+            //           AssetImage('assets/twitter 1.png'),
+            //           size: 22,
+            //           color: Colors.white,
+            //         ),
+            //         SizedBox(width: 40.0,),
+            //         ImageIcon(
+            //           AssetImage('assets/instagram (1) 1.png'),
+            //           size: 25,
+            //           color: Colors.white,
+            //         ),
+            //         SizedBox(width: 40.0,),
+            //         ImageIcon(
+            //           AssetImage('assets/linkedin 1.png'),
+            //           size: 25,
+            //           color: Colors.white,
+            //         ),
+            //       ],
+            //     ),
+            //     Center(
+            //       child: Text('Copyright text'),
+            //     ),
+            //     // Center(
+            //     //   child: Row(
+            //     //     children: [
+            //     //       Text(
+            //     //         'Khel Udaan   |   \u00a9  2021 All Rights Reserved',
+            //     //         style: TextStyle(
+            //     //           color: Colors.white,
+            //     //           fontSize: 16.0,
+            //     //         ),
+            //     //       ),
+            //     //       Text(
+            //     //         '\u00a9  2021 All Rights Reserved',
+            //     //         style: TextStyle(
+            //     //           color: Colors.white,
+            //     //           fontSize: 16.0,
+            //     //         ),
+            //     //       ),
+            //     //     ],
+            //     //   ),
+            //     // ),
+            //   ],
+            // ),
           ],
         ),
       );

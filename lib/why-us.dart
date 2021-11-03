@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:khel_udaan/appbar.dart';
 import 'package:khel_udaan/footer.dart';
 
@@ -818,14 +819,14 @@ class WhyUs extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
-                  padding: EdgeInsets.fromLTRB(30.0, 100.0, 30.0, 200.0),
+                  padding: EdgeInsets.fromLTRB(30.0, 130.0, 30.0, 216.0),
                   child: Column(
                     children: [
                       Text(
                         'WHY KHEL-UDAAN',
                         style: TextStyle(
-                          fontSize: 14.0,
-                          color: Color.fromRGBO(81, 81, 81, 1.0),
+                          fontSize: 18.0,
+                          color: Color.fromRGBO(56, 56, 56, 1.0),
                         ),
                       ),
                       SizedBox(height: 10.0,),
@@ -843,84 +844,90 @@ class WhyUs extends StatelessWidget {
                           'Because you deserve to be\n'
                           'the best in your field',
                           style: TextStyle(
-                            fontSize: 50.0,
-                            letterSpacing: 1.5,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 64.0,
+                            fontWeight: FontWeight.w700,
                           ),
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      SizedBox(height: 20.0,),
+                      SizedBox(height: 34.0,),
                       Text(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tempus pulvinar. Cras sit amet.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque vitae convallis tincidunt nulla ',
                         style: TextStyle(
-                          fontSize: 14.0,
-                          color: Color.fromRGBO(81, 81, 81, 1.0),
+                          fontSize: 18.0,
+                          color: Color.fromRGBO(56, 56, 56, 1.0),
                         ),
                       ),
                       SizedBox(height: 30.0,),
                       TextButton(
-                          onPressed: () {},
-                          child: Text("Let's Play"),
-                          style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
-                              ),
+                        onPressed: () {},
+                        child: Text(
+                          "Let's Play",
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
+                        style: ButtonStyle(
+                          foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                          padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(66.0, 17.0, 66.0, 17.0)),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(77.0),
+                              side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                             ),
                           ),
                         ),
+                      ),
                     ],
                   ),
                 ),
                 Container(
                   color: Color.fromRGBO(92, 92, 255, 1.0),
-                  padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
+                  padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 37.0),
                   child: Column(
                     children: [
                       CircleAvatar(
-                        backgroundImage: AssetImage('assets/athlete.png'),
-                        radius: 50.0,
+                        backgroundImage: AssetImage('assets/Ellipse 19.png'),
+                        radius: 65.0,
                       ),
-                      SizedBox(height: 20.0,),
+                      SizedBox(height: 16.0,),
                       Text(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing\n' 
-                        'elit. Duis maximus tempus pulvinar. Cras sit amet.\n'
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing\n' 
-                        'elit. Duis maximus tempus pulvinar. Cras sit amet.\n',
+                        'elit. Sed mi, in nulla lacus egestas dictum convallis.\n' 
+                        'Amet congue id tincidunt neque amet in elementum\n' 
+                        'eget vitae. Duis quam sodales tempor ',
                         style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
-                          letterSpacing: 2.0,
+                          fontSize: 26.0,
+                          color: Color.fromRGBO(243, 243, 243, 1.0),
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 30.0,),
+                      SizedBox(height: 51.0,),
                       Text(
                         'Francis',
                         style: TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.white,
+                          fontSize: 16.0,
+                          color: Color.fromRGBO(231, 231, 231, 1.0),
+                          fontWeight: FontWeight.w700,
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 10.0,),
+                      SizedBox(height: 11.0,),
                       Text(
                         'Football Manager',
                         style: TextStyle(
-                          fontSize: 12.0,
-                          color: Colors.white,
+                          fontSize: 14.0,
+                          color: Color.fromRGBO(231, 231, 231, 1.0),
+                          fontWeight: FontWeight.w600,
                         ),
                         textAlign: TextAlign.center,
                       ),
+                      SizedBox(height: 60.0,),
                     ],
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 70.0, vertical: 200.0),
+                  padding: EdgeInsets.symmetric(horizontal: 70.0, vertical: 243.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -930,39 +937,45 @@ class WhyUs extends StatelessWidget {
                           Text(
                             'EASE-OF-USE',
                             style: TextStyle(
-                              fontSize: 14.0,
+                              fontSize: 18.0,
+                              color: Color.fromRGBO(56, 56, 56, 1.0),
                             ),
                           ),
                           SizedBox(height: 20.0,),
                           Text(
-                            'Built to empower your while team\n'
+                            'Built to empower your whole team\n'
                             'and ofcourse you!',
                             style: TextStyle(
-                              fontSize: 40.0,
-                              fontWeight: FontWeight.bold,
+                              fontSize: 46.0,
+                              fontWeight: FontWeight.w700,
                             ),
                             textAlign: TextAlign.left,
                           ),
                           SizedBox(height: 20.0,),
                           Text(
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum\n'
-                            'convallis nunc magna. Nullam eu ligula at lorem placerat posuere\n' 
-                            'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n' 
-                            'vestibulum tempor rhoncus. Etiam pretium sit amet velit sollicitudin\n' 
-                            'varius. Cras ipsum purus, varius sit amet mauris sit amet, \n'
-                            'dignissim metus. Aenean a rutrum ipsum. Interdum et.',
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing\n' 
+                            'sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                            'consequat. Ac amet ac id egestas. Neque pellentesque mattis sollicitudin\n' 
+                            'vitae praesent tincidunt in id gravida. Neque mauris duis donec ultricies\n' 
+                            'vitae nec. Tristique turpis eget vel feugiat risus. Quisque rhoncus\n' 
+                            'pellentesque nunc augue eget lobortis in odio dictumst. ',
                             style: TextStyle(
                               fontSize: 18.0,
+                              color: Color.fromRGBO(111, 111, 111, 1.0),
                             ),
                             textAlign: TextAlign.justify,
                           ),
                         ],
                       ),
-                      SizedBox(width: 200.0,),
-                      Expanded(
-                        child: Card(
-                          child: Image.asset('assets/dashboard.png',),
-                          elevation: 6.0,
+                      // SizedBox(width: 200.0,),
+                      Container(
+                        height: 432,
+                        width: 447,
+                        child: SizedBox.expand(
+                          child: Image.asset(
+                            'assets/dashboard.png',
+                            fit: BoxFit.fitWidth,
+                          ),
                         ),
                       ),
                     ],

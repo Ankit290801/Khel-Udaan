@@ -162,29 +162,40 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
       return Container(
       color: Colors.white,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 100.0, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 100.0, vertical: 8),
         child: Row(
           children: [
-            TextButton(
-              child: Text(
-                'KHEL - UDAAN',
-                style: TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
+            Row(
+              children: [
+                IconButton(
+                onPressed: () {}, 
+                icon: Image.asset(
+                  'assets/Artboard 1 1.png',
+                  ),
+                iconSize: 68.0,
                 ),
-              ),
-              onPressed: () {
-                Navigator.pushReplacementNamed(context, '/');
-              }
+                TextButton(
+                  child: Text(
+                    'KHEL - UDAAN',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(context, '/');
+                  }
+                ),
+              ],
             ),
             Spacer(),
             TextButton(
               child: Text(
                 'Athletes',
                 style: TextStyle(
-                  fontSize: 12.0,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               style: ButtonStyle(
@@ -198,8 +209,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
               child: Text(
                 'Invest',
                 style: TextStyle(
-                  fontSize: 12.0,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               style: ButtonStyle(
@@ -213,8 +224,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
               child: Text(
                 'How it works',
                 style: TextStyle(
-                  fontSize: 12.0,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               style: ButtonStyle(
@@ -228,8 +239,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
               child: Text(
                 'Why Us',
                 style: TextStyle(
-                  fontSize: 12.0,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               style: ButtonStyle(
@@ -243,8 +254,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
               child: Text(
                 'Get involved',
                 style: TextStyle(
-                  fontSize: 12.0,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               style: ButtonStyle(
@@ -258,8 +269,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
               child: Text(
                 'Contact',
                 style: TextStyle(
-                  fontSize: 12.0,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               style: ButtonStyle(

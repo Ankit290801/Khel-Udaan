@@ -303,7 +303,7 @@ class Athletes extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+                  padding: EdgeInsets.fromLTRB(50.0, 67.0, 50.0, 98.0),
                   color: Color.fromRGBO(12, 11, 34, 1.0),
                   child: Column(
                     children: [
@@ -320,134 +320,222 @@ class Athletes extends StatelessWidget {
                         child: Text(
                           'Meet Our Esteemed Athletes',
                           style: TextStyle(
-                            fontSize: 50.0,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5
+                            fontSize: 64.0,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.12
                           ),
                         ),
                       ),
-                      SizedBox(height: 20.0,),
+                      SizedBox(height: 27.0,),
                       Text(
-                        'sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu\n' 
-                        'cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat\n' 
-                        'sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi, in nulla lacus egestas dictum\n' 
+                        'convallis. Amet congue id tincidunt neque amet in elementum eget vitae. Duis quam sodales\n' 
+                        'tempor feugiat ullamcorper faucibus ac nibh. Arcu adipiscing metus, massa quam.',
                         style: TextStyle(
-                          color: Color.fromRGBO(137, 137, 141, 1.0),
-                          fontSize: 16.0,
+                          color: Color.fromRGBO(166, 166, 166, 1.0),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w500,
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 20.0,),
+                      SizedBox(height: 75.0,),
+                      Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(38.0),
+                        ),
+                        color: Color.fromRGBO(28, 26, 65, 1.0),
+                        elevation: 0.0,
+                        child: Container(
+                          height: 334,
+                          width: 543,
+                          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 33.0),
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              radius: 40.0,
+                              backgroundImage: AssetImage('assets/Ellipse 19.png'),
+                            ),
+                            title: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi, in nulla lacus egestas dictum convallis. Amet congue id tincidunt neque amet in elementum eget vitae. Duis quam sodales tempor feugiat ullamcorper faucibus ac nibh. Arcu adipiscing metus, massa quam. nibh. Arcu adipiscing metus, massa quam. ',
+                                  textAlign: TextAlign.justify,
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    color: Color.fromRGBO(171, 170, 170, 1.0),
+                                    letterSpacing: 1.0,
+                                    wordSpacing: 1.0,
+                                  ),
+                                ),
+                                SizedBox(height: 20.0,),
+                                Text(
+                                  'Francis',
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    color: Color.fromRGBO(231, 231, 231, 1.0),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                SizedBox(height: 10.0,),
+                                Text(
+                                  'Football Manager',
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    color: Color.fromRGBO(231, 231, 231, 1.0),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
-                SizedBox(height: 85.0),
+                SizedBox(height: 131.0),
                 Container(
                   child: Column(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 40.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 43.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 85.0),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
-                            ),
-                          ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
-                            ),
-                          ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/athlete.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
                         ],
                       ),
-                      SizedBox(height: 85.0),
+                      SizedBox(height: 131.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 40.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 43.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 40.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
                         ],
                       ),
-                      SizedBox(height: 85.0),
+                      SizedBox(height: 131.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 40.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 43.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
-                          Expanded(
-                            child: Image.asset(
-                              'assets/athlete.png',
-                              height: 400,
-                              width: 400,
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 40.png',
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 131.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 40.png',
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 43.png',
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 526,
+                            width: 428,
+                            child: SizedBox.expand(
+                              child: Image.asset(
+                                'assets/Rectangle 40.png',
+                                fit: BoxFit.contain,
+                              ),
                             ),
                           ),
                         ],
@@ -455,44 +543,50 @@ class Athletes extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 200.0),
+                SizedBox(height: 367.0),
                 Container(
                   color: Color.fromRGBO(237, 231, 255, 1.0),
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 50.0),
+                    padding: const EdgeInsets.fromLTRB(30.0, 58.0, 30.0, 81.0),
                     child: Column(
                       children: [
                         Text(
                           'Wanna boost yourself to your maximum potential?',
                           style: TextStyle(
-                            fontSize: 40.0,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5,
+                            fontSize: 46.0,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.12,
                             color: Color.fromRGBO(0, 0, 94, 1.0),
                           ),
                         ),
-                        SizedBox(height: 20.0,),
+                        SizedBox(height: 28.0,),
                         Text(
-                          'sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu\n' 
-                          'cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat\n' 
-                          'sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis',
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi, in nulla lacus egestas dictum convallis.\n' 
+                          'Amet congue id tincidunt neque amet in elementum eget vitae. Duis quam sodales tempor feugiat\n' 
+                          'ullamcorper faucibus ac nibh. Arcu adipiscing metus, massa quam.',
                           style: TextStyle(
-                            color: Color.fromRGBO(78, 60, 121, 1.0),
-                            fontSize: 16.0,
+                            color: Color.fromRGBO(55, 36, 102, 1.0),
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w500,
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(height: 50.0,),
+                        SizedBox(height: 70.0,),
                         TextButton(
                           onPressed: () {},
-                          child: Text("Let's Play"),
+                          child: Text(
+                            "Let's Play",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                            ),
+                          ),
                           style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(133, 133, 255, 1.0)),
-                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0)),
+                            foregroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(92, 92, 255, 1.0)),
+                            padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(66.0, 17.0, 66.0, 17.0)),
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                side: BorderSide(color: Color.fromRGBO(133, 133, 255, 1.0)),
+                                borderRadius: BorderRadius.circular(77.0),
+                                side: BorderSide(color: Color.fromRGBO(92, 92, 255, 1.0)),
                               ),
                             ),
                           ),
