@@ -514,17 +514,17 @@ class SupportedBy extends StatelessWidget {
                           colors: [
                             Color.fromRGBO(245, 203, 97, 1.0),
                             Color.fromRGBO(20, 82, 242, 1.0),
-                          ],
+                          ], 
                         ).createShader(rect),
                         child: Text(
                           'Invest in future',
                           style: TextStyle(
-                            fontSize: 50.0,
+                            fontSize: 64.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
-                      SizedBox(height: 80.0,),
+                      SizedBox(height: 103.0,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -533,17 +533,17 @@ class SupportedBy extends StatelessWidget {
                               Text(
                                 '200 Million',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 30.0,
+                                  color: Color.fromRGBO(255, 255, 255, 1.0),
+                                  fontSize: 46.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 10.0,),
+                              SizedBox(height: 13.0,),
                               Text(
                                 'Users Reached',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12.0,
+                                  color: Color.fromRGBO(255, 255, 255, 1.0),
+                                  fontSize: 18.0,
                                 ),
                               ),
                             ],
@@ -553,17 +553,17 @@ class SupportedBy extends StatelessWidget {
                               Text(
                                 '1.3 billion',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 30.0,
+                                  color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 46.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 10.0,),
+                              SizedBox(height: 13.0,),
                               Text(
                                 'Experiences Delivered',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12.0,
+                                  color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 18.0,
                                 ),
                               ),
                             ],
@@ -573,17 +573,17 @@ class SupportedBy extends StatelessWidget {
                               Text(
                                 '2.2 billion',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 30.0,
+                                  color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 46.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 10.0,),
+                              SizedBox(height: 13.0,),
                               Text(
                                 'Events Processed',
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12.0,
+                                  color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 18.0,
                                 ),
                               ),
                             ],
@@ -615,25 +615,24 @@ class SupportedBy extends StatelessWidget {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                          'Trust Partner 1',
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 14.0,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                          SizedBox(height: 20.0,),
-                                          Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-                                            'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
-                                            'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
-                                            'massa',
+                                            'Trust Partner 1',
                                             style: TextStyle(
-                                              fontSize: 12.0,
-                                              color: Color.fromRGBO(121, 130, 130, 1.0),
-                                              letterSpacing: 1.2,
+                                                color: Colors.white,
+                                                fontSize: 18.0,
+                                                fontWeight: FontWeight.w600,
+                                              ),
                                             ),
-                                          ),
+                                            SizedBox(height: 20.0,),
+                                            Text(
+                                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n' 
+                                              'Tempus adipiscing sit a purus ac sit. Nibh commodo, id\n' 
+                                              'scelerisque consectetur risus consequat. Ac amet ac id\n' 
+                                              'egestas.',
+                                              style: TextStyle(
+                                                fontSize: 18.0,
+                                                color: Color.fromRGBO(164, 164, 164, 1.0),
+                                              ),
+                                            ),
                                         ]
                                       ),
                                     ),
@@ -643,7 +642,7 @@ class SupportedBy extends StatelessWidget {
                             ),
                             Card(
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30.0),
+                                borderRadius: BorderRadius.circular(20.0),
                               ),
                               color: Color.fromRGBO(50, 73, 74, 1.0),
                               child: Padding(
@@ -663,20 +662,19 @@ class SupportedBy extends StatelessWidget {
                                           'Trust Partner 2',
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14.0,
-                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18.0,
+                                              fontWeight: FontWeight.w600,
                                             ),
                                           ),
                                           SizedBox(height: 20.0,),
                                           Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-                                            'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
-                                            'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
-                                            'massa',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n' 
+                                            'Tempus adipiscing sit a purus ac sit. Nibh commodo, id\n' 
+                                            'scelerisque consectetur risus consequat. Ac amet ac id\n' 
+                                            'egestas.',
                                             style: TextStyle(
-                                              fontSize: 12.0,
-                                              color: Color.fromRGBO(121, 130, 130, 1.0),
-                                              letterSpacing: 1.2,
+                                              fontSize: 18.0,
+                                              color: Color.fromRGBO(164, 164, 164, 1.0),
                                             ),
                                           ),
                                         ]

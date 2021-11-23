@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
@@ -162,7 +163,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
       return Container(
       color: Colors.white,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 100.0, vertical: 8),
+        padding: const EdgeInsets.fromLTRB(106.0, 8.0, 85.0, 8.0),
         child: Row(
           children: [
             Row(
@@ -284,20 +285,21 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
               child: Text(
                 "Let's Play",
                 style: TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               style: ButtonStyle(
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
                 backgroundColor: MaterialStateProperty.all<Color>(Color.fromRGBO(137, 96, 255, 1.0)),
                 shape: MaterialStateProperty.all<OutlinedBorder>(RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
+                    borderRadius: BorderRadius.circular(38.0),
                   ),
                 ),
-                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0)),
+                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.fromLTRB(36.0, 14.0, 35.0, 14.0)),
               ),
               onPressed: () {
-                // Navigator.pushReplacementNamed(context, '/athletes');
+                Navigator.pushReplacementNamed(context, '/');
               }
             ),
           ],

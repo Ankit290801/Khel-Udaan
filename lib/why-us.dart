@@ -967,7 +967,6 @@ class WhyUs extends StatelessWidget {
                           ),
                         ],
                       ),
-                      // SizedBox(width: 200.0,),
                       Container(
                         height: 432,
                         width: 447,
@@ -992,14 +991,14 @@ class WhyUs extends StatelessWidget {
                         child: Row(
                           children: [
                             Container(
-                              height: 600,
-                              width: 600,
+                              height: 400,
+                              width: 450,
                               child: Stack(
                                 clipBehavior: Clip.none,
                                 children: [
                                   Container(
                                     height: 300,
-                                    width: 500,
+                                    width: 450,
                                     child: Expanded(child: Image.asset('assets/dashboard.png'),)
                                   ),
                                   Positioned(
@@ -1007,7 +1006,7 @@ class WhyUs extends StatelessWidget {
                                     left: 50,
                                     child: Container(
                                       height: 300,
-                                      width: 500,
+                                      width: 450,
                                       child: Expanded(child: Image.asset('assets/dashboard.png'),)
                                     ),
                                   ),
@@ -1015,14 +1014,15 @@ class WhyUs extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                              padding: const EdgeInsets.symmetric(horizontal: 45.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
                                     'EASE-OF-USE',
                                     style: TextStyle(
-                                      fontSize: 16.0,
+                                      fontSize: 18.0,
+                                      color: Color.fromRGBO(56, 56, 56, 1.0),
                                     ),
                                   ),
                                   SizedBox(height: 20.0,),
@@ -1030,16 +1030,20 @@ class WhyUs extends StatelessWidget {
                                     'Built to empower your whole team\n'
                                     'and ofcourse you!',
                                     style: TextStyle(
-                                      fontSize: 40.0,
-                                      fontWeight: FontWeight.bold,
+                                      fontSize: 46.0,
+                                      fontWeight: FontWeight.w700,
                                     ),
                                   ),
-                                  SizedBox(height: 40.0,),
+                                  SizedBox(height: 25.0,),
                                   Text(
-                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc placerat posuere\n'
-                                    'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit lacinia purus sit\n' 
-                                    'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula lacinia\n', 
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a purus ac\n' 
+                                    'sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac amet ac id egestas.\n' 
+                                    'Neque pellentesque mattis sollicitudin vitae praesent tincidunt in id gravida.', 
                                     textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                      fontSize: 18.0,
+                                      color: Color.fromRGBO(111, 111, 111, 1.0),
+                                    ),
                                   ),
                                   SizedBox(height: 60.0,),
                                   Container(
@@ -1052,10 +1056,10 @@ class WhyUs extends StatelessWidget {
                                             Column(
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               children: [
-                                                Icon(
-                                                  Icons.stacked_bar_chart_outlined,
-                                                  size: 40.0,
-                                                  color: Colors.black,
+                                                ImageIcon(
+                                                  AssetImage('assets/6051070eb926f41a679816a3_sleek visualizations 1 (2).png'),
+                                                  size: 66.0,
+                                                  color: Color.fromRGBO(36, 42, 53, 1.0),
                                                 )
                                               ],
                                             ),
@@ -1066,16 +1070,17 @@ class WhyUs extends StatelessWidget {
                                                 Text(
                                                   'Sleek Visualisation',
                                                   style: TextStyle(
-                                                    fontSize: 16.0,
+                                                    fontSize: 18.0,
                                                   ),
                                                 ),
-                                                SizedBox(height: 20.0,),
+                                                SizedBox(height: 18.0,),
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
-                                                  'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
-                                                  'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a\n' 
+                                                  'purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac\n' 
+                                                  'amet ac id egestas.',
                                                   style: TextStyle(
-                                                    fontSize: 14.0,
+                                                    fontSize: 18.0,
+                                                    color: Color.fromRGBO(111, 111, 111, 1.0),
                                                   ),
                                                 ),
                                               ],
@@ -1085,7 +1090,7 @@ class WhyUs extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 60.0,),
+                                  SizedBox(height: 48.0,),
                                   Container(
                                     child: Card(
                                       color: Color.fromRGBO(245, 245, 255, 1.0),
@@ -1096,10 +1101,10 @@ class WhyUs extends StatelessWidget {
                                             Column(
                                               mainAxisAlignment: MainAxisAlignment.start,
                                               children: [
-                                                Icon(
-                                                  Icons.computer_outlined,
-                                                  size: 40.0,
-                                                  color: Colors.black,
+                                                ImageIcon(
+                                                  AssetImage('assets/605106e17bed57c99d1817b3_report dashboards 1.png'),
+                                                  size: 66.0,
+                                                  color: Color.fromRGBO(36, 42, 53, 1.0),
                                                 )
                                               ],
                                             ),
@@ -1110,16 +1115,17 @@ class WhyUs extends StatelessWidget {
                                                 Text(
                                                   'Custom Dashboard',
                                                   style: TextStyle(
-                                                    fontSize: 16.0,
+                                                    fontSize: 18.0,
                                                   ),
                                                 ),
-                                                SizedBox(height: 20.0,),
+                                                SizedBox(height: 18.0,),
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
-                                                  'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
-                                                  'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a\n' 
+                                                  'purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac\n' 
+                                                  'amet ac id egestas.',
                                                   style: TextStyle(
-                                                    fontSize: 14.0,
+                                                    fontSize: 18.0,
+                                                    color: Color.fromRGBO(111, 111, 111, 1.0),
                                                   ),
                                                 ),
                                               ],
@@ -1148,6 +1154,12 @@ class WhyUs extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.fromLTRB(229, 324.0, 208.0, 207.0),
+                  height: 354,
+                  width: 900,
+                  color: Color.fromRGBO(30, 178, 152, 1.0),
+                ),
+                Container(
                   color: Color.fromRGBO(245, 245, 255, 1.0),
                   padding: EdgeInsets.fromLTRB(30.0, 300.0, 30.0, 100.0),
                   child: Row(
@@ -1167,7 +1179,8 @@ class WhyUs extends StatelessWidget {
                             Text(
                               'DESIGN FLEXIBILTY',
                               style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(56, 56, 56, 1.0),
                               ),
                             ),
                             SizedBox(height: 20.0,),
@@ -1175,17 +1188,24 @@ class WhyUs extends StatelessWidget {
                               'Beautiful, on-brand experiences\n'
                               'in minutes',
                               style: TextStyle(
-                                fontSize: 40.0,
-                                fontWeight: FontWeight.bold,
+                                fontSize: 46.0,
+                                fontWeight: FontWeight.w700,
                               ),
                             ),
                             SizedBox(height: 40.0,),
                             Text(
-                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc placerat posuere\n'
-                              'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit lacinia purus sit\n' 
-                              'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula lacinia\n', 
-                              textAlign: TextAlign.justify,
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing\n' 
+                            'sit a purus ac sit. Nibh commodo, id scelerisque consectetur risus\n' 
+                            'consequat. Ac amet ac id egestas. Neque pellentesque mattis sollicitudin\n' 
+                            'vitae praesent tincidunt in id gravida. Neque mauris duis donec ultricies\n' 
+                            'vitae nec. Tristique turpis eget vel feugiat risus. Quisque rhoncus\n' 
+                            'pellentesque nunc augue eget lobortis in odio dictumst. ',
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: Color.fromRGBO(111, 111, 111, 1.0),
                             ),
+                            textAlign: TextAlign.justify,
+                          ),
                             SizedBox(height: 60.0,),
                             Container(
                               child: Card(
@@ -1197,10 +1217,10 @@ class WhyUs extends StatelessWidget {
                                       Column(
                                         mainAxisAlignment: MainAxisAlignment.start,
                                         children: [
-                                          Icon(
-                                            Icons.stacked_bar_chart_outlined,
-                                            size: 40.0,
-                                            color: Colors.black,
+                                          ImageIcon(
+                                            AssetImage('assets/6051070eb926f41a679816a3_sleek visualizations 1 (2).png'),
+                                            size: 66.0,
+                                            color: Color.fromRGBO(36, 42, 53, 1.0),
                                           )
                                         ],
                                       ),
@@ -1211,60 +1231,17 @@ class WhyUs extends StatelessWidget {
                                           Text(
                                             'Sleek Visualisation',
                                             style: TextStyle(
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                             ),
                                           ),
-                                          SizedBox(height: 20.0,),
+                                          SizedBox(height: 18.0,),
                                           Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
-                                            'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
-                                            'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a\n' 
+                                            'purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac\n' 
+                                            'amet ac id egestas.',
                                             style: TextStyle(
-                                              fontSize: 14.0,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(height: 60.0,),
-                            Container(
-                              child: Card(
-                                color: Color.fromRGBO(245, 245, 255, 1.0),
-                                elevation: 0.0,
-                                child: Expanded(
-                                  child: Row(
-                                    children: [
-                                      Column(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        children: [
-                                          Icon(
-                                            Icons.computer_outlined,
-                                            size: 40.0,
-                                            color: Colors.black,
-                                          )
-                                        ],
-                                      ),
-                                      SizedBox(width: 20.0,),
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            'Custom Dashboard',
-                                            style: TextStyle(
-                                              fontSize: 16.0,
-                                            ),
-                                          ),
-                                          SizedBox(height: 20.0,),
-                                          Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
-                                            'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
-                                            'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
-                                            style: TextStyle(
-                                              fontSize: 14.0,
+                                              fontSize: 18.0,
+                                              color: Color.fromRGBO(111, 111, 111, 1.0),
                                             ),
                                           ),
                                         ],
@@ -1285,10 +1262,10 @@ class WhyUs extends StatelessWidget {
                                       Column(
                                         mainAxisAlignment: MainAxisAlignment.start,
                                         children: [
-                                          Icon(
-                                            Icons.computer_outlined,
-                                            size: 40.0,
-                                            color: Colors.black,
+                                          ImageIcon(
+                                            AssetImage('assets/605106e17bed57c99d1817b3_report dashboards 1.png'),
+                                            size: 66.0,
+                                            color: Color.fromRGBO(36, 42, 53, 1.0),
                                           )
                                         ],
                                       ),
@@ -1299,16 +1276,62 @@ class WhyUs extends StatelessWidget {
                                           Text(
                                             'Custom Dashboard',
                                             style: TextStyle(
-                                              fontSize: 16.0,
+                                              fontSize: 18.0,
                                             ),
                                           ),
-                                          SizedBox(height: 20.0,),
+                                          SizedBox(height: 18.0,),
                                           Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nunc\n'
-                                            'convallis nunc magna. Nullam eu ligula at lorem placerat posuere lacinia purus sit\n' 
-                                            'vestibulum ornare at urna. Suspendisse lacinia purus sit amet ligula\n',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a\n' 
+                                            'purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac\n' 
+                                            'amet ac id egestas.',
                                             style: TextStyle(
-                                              fontSize: 14.0,
+                                              fontSize: 18.0,
+                                              color: Color.fromRGBO(111, 111, 111, 1.0),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 60.0,),
+                            Container(
+                              child: Card(
+                                color: Color.fromRGBO(245, 245, 255, 1.0),
+                                elevation: 0.0,
+                                child: Expanded(
+                                  child: Row(
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        children: [
+                                          ImageIcon(
+                                            AssetImage('assets/605106e17bed57c99d1817b3_report dashboards 1.png'),
+                                            size: 66.0,
+                                            color: Color.fromRGBO(36, 42, 53, 1.0),
+                                          )
+                                        ],
+                                      ),
+                                      SizedBox(width: 20.0,),
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Custom Dashboard',
+                                            style: TextStyle(
+                                              fontSize: 18.0,
+                                            ),
+                                          ),
+                                          SizedBox(height: 18.0,),
+                                          Text(
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus adipiscing sit a\n' 
+                                            'purus ac sit. Nibh commodo, id scelerisque consectetur risus consequat. Ac\n' 
+                                            'amet ac id egestas.',
+                                            style: TextStyle(
+                                              fontSize: 18.0,
+                                              color: Color.fromRGBO(111, 111, 111, 1.0),
                                             ),
                                           ),
                                         ],
@@ -1338,8 +1361,8 @@ class WhyUs extends StatelessWidget {
                             Text(
                               'You are in good hands',
                               style: TextStyle(
-                                fontSize: 14.0,
-                                color: Colors.white,
+                                fontSize: 18.0,
+                                color: Color.fromRGBO(210, 210, 210, 1.0),
                               ),
                             ),
                             SizedBox(height: 80.0,),
@@ -1351,17 +1374,17 @@ class WhyUs extends StatelessWidget {
                                     Text(
                                       '200 Million',
                                       style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 30.0,
+                                        color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 46.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(height: 10.0,),
+                                    SizedBox(height: 13.0,),
                                     Text(
                                       'Users Reached',
                                       style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 12.0,
+                                        color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 18.0,
                                       ),
                                     ),
                                   ],
@@ -1371,17 +1394,17 @@ class WhyUs extends StatelessWidget {
                                     Text(
                                       '1.3 billion',
                                       style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 30.0,
+                                        color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 46.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(height: 10.0,),
+                                    SizedBox(height: 13.0,),
                                     Text(
                                       'Experiences Delivered',
                                       style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 12.0,
+                                        color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 18.0,
                                       ),
                                     ),
                                   ],
@@ -1391,24 +1414,24 @@ class WhyUs extends StatelessWidget {
                                     Text(
                                       '2.2 billion',
                                       style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 30.0,
+                                        color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 46.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(height: 10.0,),
+                                    SizedBox(height: 13.0,),
                                     Text(
                                       'Events Processed',
                                       style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 12.0,
+                                        color: Color.fromRGBO(255, 255, 255, 1.0),
+                                        fontSize: 18.0,
                                       ),
                                     ),
                                   ],
                                 ),
                               ],
                             ),
-                            SizedBox(height: 80.0,),
+                            SizedBox(height: 83.0,),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 40.0),
                               child: Row(
@@ -1416,7 +1439,7 @@ class WhyUs extends StatelessWidget {
                                 children: [
                                   Card(
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(30.0),
+                                      borderRadius: BorderRadius.circular(20.0),
                                     ),
                                     color: Color.fromRGBO(50, 73, 74, 1.0),
                                     child: Padding(
@@ -1425,10 +1448,10 @@ class WhyUs extends StatelessWidget {
                                         children: [
                                           CircleAvatar(
                                             backgroundColor: Color.fromRGBO(196, 196, 196, 1.0),
-                                            radius: 60,
+                                            radius: 78,
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                            padding: const EdgeInsets.symmetric(horizontal: 30.0),
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
@@ -1436,20 +1459,19 @@ class WhyUs extends StatelessWidget {
                                                 'Trust Partner 1',
                                                 style: TextStyle(
                                                     color: Colors.white,
-                                                    fontSize: 14.0,
-                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 18.0,
+                                                    fontWeight: FontWeight.w600,
                                                   ),
                                                 ),
                                                 SizedBox(height: 20.0,),
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-                                                  'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
-                                                  'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
-                                                  'massa',
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n' 
+                                                  'Tempus adipiscing sit a purus ac sit. Nibh commodo, id\n' 
+                                                  'scelerisque consectetur risus consequat. Ac amet ac id\n' 
+                                                  'egestas.',
                                                   style: TextStyle(
-                                                    fontSize: 12.0,
-                                                    color: Color.fromRGBO(121, 130, 130, 1.0),
-                                                    letterSpacing: 1.2,
+                                                    fontSize: 18.0,
+                                                    color: Color.fromRGBO(164, 164, 164, 1.0),
                                                   ),
                                                 ),
                                               ]
@@ -1470,7 +1492,7 @@ class WhyUs extends StatelessWidget {
                                         children: [
                                           CircleAvatar(
                                             backgroundColor: Color.fromRGBO(196, 196, 196, 1.0),
-                                            radius: 60,
+                                            radius: 78,
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -1481,20 +1503,19 @@ class WhyUs extends StatelessWidget {
                                                 'Trust Partner 2',
                                                 style: TextStyle(
                                                     color: Colors.white,
-                                                    fontSize: 14.0,
-                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 18.0,
+                                                    fontWeight: FontWeight.w600,
                                                   ),
                                                 ),
                                                 SizedBox(height: 20.0,),
                                                 Text(
-                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-                                                  'Proin fermentum ligula ac nulla fermentum, eget mattis\n' 
-                                                  'risus lobortis. Nam porta, nisl ac interdum sagittis,\n' 
-                                                  'massa',
+                                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n' 
+                                                  'Tempus adipiscing sit a purus ac sit. Nibh commodo, id\n' 
+                                                  'scelerisque consectetur risus consequat. Ac amet ac id\n' 
+                                                  'egestas.',
                                                   style: TextStyle(
-                                                    fontSize: 12.0,
-                                                    color: Color.fromRGBO(121, 130, 130, 1.0),
-                                                    letterSpacing: 1.2,
+                                                    fontSize: 18.0,
+                                                    color: Color.fromRGBO(164, 164, 164, 1.0),
                                                   ),
                                                 ),
                                               ]
